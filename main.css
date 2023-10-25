@@ -1,0 +1,48 @@
+/* bảng màu
+--oxford-blue: #0c274eff;
+--orange-web: #fba708ff;
+--powder-blue: #afc4ddff;
+--isabelline: #f4f0ecff;
+--bittersweet: #ef5b5bff; */
+
+.header-logo-page {
+    width: 90px;
+    height: 90px;
+}
+
+
+/* h2 {
+    text-align: center;
+} */
+
+.navbar {
+    background-color: white;
+    padding-top: 0px;
+    animation: slideIn 1.5s ease;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(10);
+    }
+}
+
+.navbar-nav {
+    width: 100%;
+}
+
+.nav-item {
+    border-bottom: solid white 2px;
+}
+
+.nav-link {
+    color: #0c274eff;
+}
+
+.nav-item:hover {
+    background-color: #afc4ddff;
+    border-bottom: solid #ef5b5bff 2px;
+}

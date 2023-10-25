@@ -4,11 +4,205 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>TEIPSTER</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
 </head>
 
 <body>
-    <p>AAAAAAAAAAAAAAAAAAAA</p>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-expand-xl  sticky-top">
+            <div class="container-fluid">
+                <a href="index.html">
+                    <img class="header-logo-page" src="img/logo.png" alt="">
+                </a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="vechungtoi.html" class="nav-link">Về Chúng Tôi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Tour/Tourhot.html">Tour Hot</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./News/news.html">Tin tức</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Contact/contact.html">Liên hệ</a>
+                    </li>
+
+                    <li class="nav-item login">
+                        <a class="nav-link" href="./Login/login.html">Đăng nhập</a>
+                    </li>
+
+                    <li class="nav-item signup">
+                        <a class="nav-link" href="./Signup/signup.html">Đăng ký</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <h3 class="text-center">Tìm Kiếm</h3>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10 col-sm-12 col-xl-8">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Keywords" aria-label="Keywords" aria-describedby="basic-addon2">
+                    <div class="input-group-append custom-select-container">
+                        <select name="destination" class="custom-select">
+                            <option value="">Điểm Đến</option>
+                            <option value="africa-adventure">Cuộc Phiêu Lưu Châu Phi</option>
+                            <option value="africa-wild">Châu Phi Hoang Dã</option>
+                            <option value="america">Châu Mĩ</option>
+                            <option value="asia">Châu Á</option>
+                            <option value="scandinavia">Bắc Âu</option>
+                            <option value="western-europe">Tây Âu</option>
+                        </select>
+                    </div>
+                    <div class="input-group-append custom-select-container">
+                        <select name="duration" class="custom-select">
+                            <option value="">Duration</option>
+                            <option value="1">1 Day Tour</option>
+                            <option value="2">2-4 Days Tour</option>
+                            <option value="5">5-7 Days Tour</option>
+                            <option value="7">7+ Days Tour</option>
+                        </select>
+                    </div>
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="submit">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="introduce container">
+        <div class="row align-items-center">
+
+            <div class="col-lg-5 col-md-6 col-sm-10 mx-auto ml-md-auto mb-6 mb-md-0 aos-init aos-animate" data-aos="zoom-in">
+                <div class="row">
+                    <div class="col-xl-8 col-lg-11">
+                        <h3 class="font-taviraj head-title">Về chúng tôi</h3>
+                    </div>
+                </div>
+                <hr class="mt-2 mb-4">
+                <p class="mb-0"><b>Saigontourist Group</b> luôn gắn các giá trị văn hóa bản địa với mọi hoạt động kinh doanh để tạo ra chuỗi giá trị mang thương hiệu Saigontourist trong nỗ lực quảng bá hình ảnh du lịch Việt Nam đến với bạn bè quốc tế, góp phần đưa du
+                    lịch trở thành ngành kinh tế mũi nhọn. Triết lý kinh doanh của chúng tôi là động lực thúc đẩy hướng đi thống nhất của tập thể Saigontourist Group, với mục tiêu doanh nghiệp luôn đồng hành cùng xã hội, cộng đồng để phát triển kinh tế
+                    và các giá trị tinh thần, nhân văn.</p> <a class="btn btn-danger d-none d-md-inline-block mt-4" href="vechungtoi.html">XEM THÊM</a> </div>
+
+            <div class="col-lg-7 col-md-6 col-sm-8 mx-auto mr-md-auto text-center">
+                <img class="img-fluid lozad aos-init loaded aos-animate" data-src="" data-aos="zoom-in" data-aos-delay="700" src="img/vechungtoi1.jpg" data-was-processed="true">
+                <a class="btn btn-danger d-inline-block d-md-none mt-6" href="vechungtoi.html">XEM THÊM</a>
+            </div>
+        </div>
+    </div>
+    <div class="container ">
+        <h1 class="text-center">Tour Phổ Biến</h1>
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <img src="img/da-lat.jpg" class="img-fluid rounded mb-3" alt="Placeholder image">
+                <h4>Heading</h4>
+                <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                <button type="button" class="btn btn-primary">Learn More</button>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <img src="img/Trang_An.jpg" class="img-fluid rounded mb-3" alt="Placeholder image">
+                <h4>Heading</h4>
+                <p>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</p>
+                <button type="button" class="btn btn-primary">Learn More</button>
+
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <img src="img/vinh-ha-long.jpg" class="img-fluid rounded mb-3" alt="Placeholder image">
+                <h4>Heading</h4>
+                <p>cccccccccccccccccccccccccccccccccc</p>
+                <button type="button" class="btn btn-primary">Learn More</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="whychooseus">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fas fa-shopping-cart fa-3x"></i>
+                            <h5 class="card-title">Mạng bán tour</h5>
+                            <p class="card-text">Ứng dụng công nghệ hiện đại nhất</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fas fa-dollar-sign fa-3x"></i>
+                            <h5 class="card-title">Sản Phẩm & Dịch vụ</h5>
+                            <p class="card-text">Đa dạng - Chất Lượng - An toàn</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="far fa-calendar-alt fa-3x"></i>
+                            <h5 class="card-title">Giá cả</h5>
+                            <p class="card-text">Luôn ở mức tốt nhất</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fas fa-calendar-check fa-3x"></i>
+                            <h5 class="card-title">Đặt tour</h5>
+                            <p class="card-text">Dễ dàng - nhanh chóng</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fas fa-money-check-alt fa-3x"></i>
+                            <h5 class="card-title">Thanh toán</h5>
+                            <p class="card-text">An toàn - Linh hoạt</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fas fa-headset fa-3x"></i>
+                            <h5 class="card-title">Hỗ trợ</h5>
+                            <p class="card-text">Hotline & trực tuyến(8h00 - 21h00)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="news">
+
+        </div>
+        <footer>
+
+        </footer>
 </body>
 
 </html>
