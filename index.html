@@ -3,12 +3,305 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Tripster</title>
+    <link rel="icon" href="images/logo.png" type="/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"
+      integrity="sha512-TPh2Oxlg1zp+kz3nFA0C5vVC6leG/6mm1z9+mA81MI5eaUVqasPLO8Cuk4gMF4gUfP5etR73rgU/8PNMsSesoQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/19b1e0589b.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <h1>Hello</h1>
-    <p>AAAAAAAAAAAAAAAAAAAA</p>
-    <h2>hi</h2>
-    <p>hhhhhhhhhhhhhh</p>
+    <header class="header-container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <a href="index.html">
+            <img class="header-logo" src="images/logo.png" alt="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <form class="form-search" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Bắt dầu tìm kiếm"
+              aria-label="Search"
+            />
+            <button class="btn search-btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+          <button
+            type=""
+            class="header-cart-btn"
+            data-bs-toggle="modal"
+            data-bs-target="#cart-modal"
+            data-backdrop="false"
+          >
+            <i class="fa-regular fa-user"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html"
+                  >Trang chủ</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Dịch vụ</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tin tức</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Liên hệ</a>
+              </li>
+
+              <li class="nav-item login">
+                <a class="nav-link" href="#">Đăng nhập</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="main-container">
+      <div class="container container-body">
+        <div class="row">
+          <div class="col-sm-9">
+            <h2>Về chúng tôi</h2>
+            <div class="row">
+              <div class="col-8 col-sm-6">
+                <p>
+                  <br /><b>Tripster</b>
+                  luôn gắn các giá trị văn hóa bản địa với mọi hoạt động kinh
+                  doanh để tạo ra chuỗi giá trị mang thương hiệu Saigontourist
+                  trong nỗ lực quảng bá hình ảnh du lịch Việt Nam đến với bạn bè
+                  quốc tế, góp phần đưa du lịch trở thành ngành kinh tế mũi
+                  nhọn. Triết lý kinh doanh của chúng tôi là động lực thúc đẩy
+                  hướng đi thống nhất của tập thể Saigontourist Group, với mục
+                  tiêu doanh nghiệp luôn đồng hành cùng xã hội, cộng đồng để
+                  phát triển kinh tế và các giá trị tinh thần, nhân văn.
+                </p>
+              </div>
+              <div class="col-4 col-sm-6">
+                <img class="main-img" src="/images/main-img.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h3>Vì sao chọn Tripster</h3>
+        <div class="row align-items-start">
+          <div class="col">
+            <i class="main-icon fa-regular fa-id-badge"></i>
+            <h5>Mạng bán tour</h5>
+            <p>Đầu tiện tại Việt Nam</p>
+            <p>Ứng dụng công nghệ mới nhất</p>
+          </div>
+          <div class="col">
+            <i class="main-icon fa-solid fa-dumpster-fire"></i>
+            <h5>Sản phẩm &  Dịch vụ</h5>
+            <p>Đa dạng - Chất lượng - An toàn</p>
+          </div>
+          <div class="col">
+            <i class="main-icon fa-regular fa-money-bill-1"></i>
+            <h5>Giá cả</h5>
+            <p>Luôn có mức giá tốt nhất</p>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col">
+            <i class="main-icon fa-solid fa-plane"></i>
+            <h5>Đặt tour</h5>
+            <p>Dễ dàng & nhanh chóng chỉ với 3 bước</p>
+          </div>
+          <div class="col">
+            <i class="main-icon fa-regular fa-credit-card"></i>
+            <h5>Thanh toán</h5>
+            <p>An toàn & linh hoạt</p>
+          </div>
+          <div class="col">
+            <i class="main-icon fa-solid fa-headset"></i>
+            <h5>Hỗ trợ</h5>
+            <p>Hotline & trực tuyến (08h00 - 22h00)</p>
+          </div>
+        </div>
+        <div class="container">
+          <h3>Ưu đãi tour giờ chót</h3>
+          <div class="row">
+            <div class="col-sm">
+              <div class="card" style="width: 100%">
+                <img
+                  class="card-img-top"
+                  src="/images/CanTho.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Miền Tây: Châu Đốc - Rừng Tràm Trà Sư - Hà Tiên - Rạch Giá - Cần Thơ (Khách sạn tương đương 3*& 4*) <br>
+                  </h5>
+                  <p class="card-text">
+                    Mã tour: NDSGN847-102-041123XE-D<br /> 
+                    Nơi khởi hành: TP. Hồ Chí Minh <br /> <br>
+                    <b>3,890,000₫</b>
+                    <br> 
+                  </p>
+                  <a href="#" class="btn btn-primary">Đặt ngay</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm">
+              <div class="card" style="width: 100%">
+                <img
+                  class="card-img-top"
+                  src="/images/ChuaThienMu.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Đà Nẵng - Huế - Đầm Lập An- Động Phong Nha - KDL Bà Nà - Cầu Vàng - Sơn Trà(Khách sạn 4* trọn tour)
+                  </h5>
+                  <p class="card-text">
+                    Mã tour: NDSGN3381-089-30123VU-F<br />
+                    Nơi khởi hành: TP. Hồ Chí Minh <br /> <br>
+                    <b>5,590,000₫</b>
+                  </p>
+                  <a href="#" class="btn btn-primary">Đặt ngay</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm">
+              <div class="card" style="width: 100%">
+                <img
+                  class="card-img-top"
+                  src="/images/CaMau.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    An Giang - Rạch Giá - Cà Mau - Bạc Liêu - Sóc Trăng - Bản Giao Hưởng Biển Rừng Phương Nam (4*)
+                  </h5>
+                  <p class="card-text">
+                    Mã tour: NNSGN1312-530-3013VJ-V-F <br />
+                    Nơi khởi hành: TP. Hồ Chí Minh <br /> <br>
+                    <b>6,490,000₫</b>
+                  </p>
+                  <a href="#" class="btn btn-primary">Đặt ngay</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="container container-body container-end-body">
+              <div class="row">
+                <div class="col-sm-9">
+                  <div class="row">
+                    <div class="col-8 col-sm-6">
+                      <div class="card-info">
+                          <h3>Tin tức mới nhất về du lịch</h3>
+                          <h4>Khám phá thế giới, khám phá chính mình.</h4>
+                          <a href="#" class="btn btn-primary">Khám phá ngay</a>
+                      </div>
+                    </div>
+                    <div class="col-4 col-sm-6">
+                      <img class="main-img" src="/images/duLich.jpeg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+    <div class="footer-dark">
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 item text">
+              <h3>Tripster.com</h3>
+              <p>Không có giới hạn trong việc khám phá thế giới. Chúng tôi là người bạn đồng hành đáng tin cậy trên mỗi hành trình của bạn.</p>
+            </div>
+            
+            <div class="col-md-3 item">
+              <h3>Du lịch</h3>
+              <ul>
+                <li><a href="#">Miền Bắc</a></li>
+                <li><a href="#">Miền Trung</a></li>
+                <li><a href="#">Miền nam</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 item">
+              <h3>Hỗ trợ</h3>
+              <ul>
+                <li><a href="#">Đăng ký dịch vụ</a></li>
+                <li><a href="#">Email cho chúng tôi</a></li>
+                <li><a href="#">Diễn đàn</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 item">
+              <h3>Tìm hiểu thêm</h3>
+              <ul>
+                <li><a href="#">Tripster.com</a></li>
+                <li><a href="#">Dịch vụ tư vấn</a></li>
+                <li><a href="#">Điều khoản dịch vụ</a></li>
+              </ul>
+            </div>
+
+            <div class="col item social">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-youtube"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-google"></i></a>
+            </div>
+          </div>
+          <p class="copyright">Bản quyền thuộc về Tripster.com &copy; 2023</p>
+        </div>
+      </footer>
+
+    </div>
+    
   </body>
 </html>
