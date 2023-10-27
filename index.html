@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Tripster</title>
-    <link rel="icon" href="images/logo.png" type="/x-icon" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="stylesheet"
-      href="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="css/main.css" />
-
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"></script>
+              <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
       integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -29,19 +36,20 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script
-      src="https://kit.fontawesome.com/19b1e0589b.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
-    <header class="header-container">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a href="index.html">
-            <img class="header-logo" src="images/logo.png" alt="logo" />
-          </a>
+          <a class="navbar-brand text-white p-3" href="#"
+            ><img
+              src="/assets/img/homepage/logo.png"
+              alt=""
+              class="img-fluid me-2"
+            />Tripster</a
+          >
+
           <button
             class="navbar-toggler"
             type="button"
@@ -53,117 +61,245 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <form class="form-search" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Bắt dầu tìm kiếm"
-              aria-label="Search"
-            />
-            <button class="btn search-btn">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-          </form>
-          <button
-            type=""
-            class="header-cart-btn"
-            data-bs-toggle="modal"
-            data-bs-target="#cart-modal"
-            data-backdrop="false"
-          >
-            <i class="fa-regular fa-user"></i>
-          </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./index.html"
-                  >Trang chủ</a
+            <ul class="navbar-nav ms-auto my-lg-0 me-sm-0 my-sm-0">
+              <li class="nav-item px-2">
+                <a
+                  class="nav-link active text-white fs-5 rounded-pill px-3 my-2"
+                  aria-current="page"
+                  href="#"
+                  >Trang Chủ</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Dịch vụ</a>
+              <li class="nav-item px-2">
+                <a
+                  class="nav-link text-white fs-5 rounded-pill px-3 my-2"
+                  href="#"
+                  >Tour</a
+                >
               </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="#">Tin tức</a>
+              <li class="nav-item px-2">
+                <a
+                  class="nav-link text-white fs-5 rounded-pill px-3 my-2"
+                  href="#"
+                  >Tin Tức</a
+                >
               </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#">Liên hệ</a>
+              <li class="nav-item px-2">
+                <a
+                  class="nav-link text-white fs-5 rounded-pill px-3 my-2"
+                  href="#"
+                  >Liên Hệ</a
+                >
               </li>
-
-              <li class="nav-item login">
-                <a class="nav-link" href="#">Đăng nhập</a>
+              <li class="nav-item px-2">
+                <a
+                  class="nav-link text-white fs-5 rounded-pill px-3 my-2"
+                  href="#"
+                  >Đăng Ký</a
+                >
+              </li>
+              <li class="nav-item px-2">
+                <a
+                  class="nav-link text-white fs-5 rounded-pill px-3 my-2"
+                  href="#"
+                  >Đăng Nhập</a
+                >
+              </li>
+              <li class="nav-item dropdown px2">
+                <a
+                  class="nav-link dropdown-toggle text-white fs-5 rounded-pill px-3 my-2"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  data-bs-display="static"
+                  aria-expanded="false"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end">
+                  <form class="d-md-inline-flex px-2" role="search">
+                    <input
+                      class="form-control me-2"
+                      type="search"
+                      placeholder="Tìm kiếm địa điểm, tour,..."
+                      aria-label="Search"
+                    />
+                    <button
+                      class="btn btn-outline-primary"
+                      style="white-space: nowrap"
+                      type="submit"
+                    >
+                      Tìm kiếm
+                    </button>
+                  </form>
+                </div>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-    <main class="main-container">
-      <div class="container container-body">
-        <div class="row">
-          <div class="col-sm-9">
-            <h2>Về chúng tôi</h2>
-            <div class="row">
-              <div class="col-8 col-sm-6">
-                <p>
-                  <br /><b>Tripster</b>
-                  luôn gắn các giá trị văn hóa bản địa với mọi hoạt động kinh
-                  doanh để tạo ra chuỗi giá trị mang thương hiệu Saigontourist
-                  trong nỗ lực quảng bá hình ảnh du lịch Việt Nam đến với bạn bè
-                  quốc tế, góp phần đưa du lịch trở thành ngành kinh tế mũi
-                  nhọn. Triết lý kinh doanh của chúng tôi là động lực thúc đẩy
-                  hướng đi thống nhất của tập thể Saigontourist Group, với mục
-                  tiêu doanh nghiệp luôn đồng hành cùng xã hội, cộng đồng để
-                  phát triển kinh tế và các giá trị tinh thần, nhân văn.
-                </p>
-              </div>
-              <div class="col-4 col-sm-6">
-                <img class="main-img" src="/images/main-img.png" alt="" />
-              </div>
+
+    <!-- Navbar -->
+
+    <main>
+      <!-- Slider -->
+      <div
+        id="homepage-slider"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#homepage-slider"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#homepage-slider"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#homepage-slider"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="false">
+            <img
+              src="/assets/img/homepage/slider1.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="false">
+            <img
+              src="/assets/img/homepage/slider2.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="false">
+            <img
+              src="/assets/img/homepage/slider3.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
             </div>
           </div>
         </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#homepage-slider"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#homepage-slider"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <div class="container">
-        <h3>Vì sao chọn Tripster</h3>
-        <div class="row align-items-start">
-          <div class="col">
-            <i class="main-icon fa-regular fa-id-badge"></i>
-            <h5>Mạng bán tour</h5>
-            <p>Đầu tiện tại Việt Nam</p>
-            <p>Ứng dụng công nghệ mới nhất</p>
+
+      <!-- Slider -->
+
+      <!-- Introduction -->
+      <div class="container my-5 about-us">
+        <div class="row justify-content-center">
+          <div class="col-xl-4 col-12 lh-lg fs-6">
+            <h1 class="mb-5">Về chúng tôi</h1>
+            <p>
+              <b>Tripster</b> luôn gắn các giá trị văn hóa bản địa với mọi hoạt
+              động kinh doanh để tạo ra chuỗi giá trị mang thương hiệu Tripster
+              trong nỗ lực quảng bá hình ảnh du lịch Việt Nam đến với bạn bè
+              quốc tế, góp phần đưa du lịch trở thành ngành kinh tế mũi nhọn.
+              Triết lý kinh doanh của chúng tôi là động lực thúc đẩy hướng đi
+              thống nhất của tập thể Tripster, với mục tiêu doanh nghiệp luôn
+              đồng hành cùng xã hội, cộng đồng để phát triển kinh tế và các giá
+              trị tinh thần, nhân văn.
+            </p>
           </div>
-          <div class="col">
-            <i class="main-icon fa-solid fa-dumpster-fire"></i>
-            <h5>Sản phẩm &  Dịch vụ</h5>
-            <p>Đa dạng - Chất lượng - An toàn</p>
-          </div>
-          <div class="col">
-            <i class="main-icon fa-regular fa-money-bill-1"></i>
-            <h5>Giá cả</h5>
-            <p>Luôn có mức giá tốt nhất</p>
-          </div>
-        </div>
-        <div class="row align-items-center">
-          <div class="col">
-            <i class="main-icon fa-solid fa-plane"></i>
-            <h5>Đặt tour</h5>
-            <p>Dễ dàng & nhanh chóng chỉ với 3 bước</p>
-          </div>
-          <div class="col">
-            <i class="main-icon fa-regular fa-credit-card"></i>
-            <h5>Thanh toán</h5>
-            <p>An toàn & linh hoạt</p>
-          </div>
-          <div class="col">
-            <i class="main-icon fa-solid fa-headset"></i>
-            <h5>Hỗ trợ</h5>
-            <p>Hotline & trực tuyến (08h00 - 22h00)</p>
+          <div class="col-xl-4 col-12 text-center">
+            <img
+              src="/assets/img/homepage/about_us.png"
+              class="img-fluid rounded-3"
+              alt=""
+            />
           </div>
         </div>
-        <div class="container">
+      </div>
+      <!-- Introduction -->
+
+      <!-- Reasons -->
+
+      <div class="container text-center reasons">
+        <div class="row justify-content-center my-5">
+          <div class="col-xl-12 col-12">
+            <h1 class="mb-5">Vì sao nên chọn Tripster</h1>
+          </div>
+        </div>
+        <div class="row justify-content-center my-5">
+          <div class="col-xl col-12">
+            <i class="fa-solid fa-award fa-5x mb-3"></i>
+            <h3>Chuyên nghiệp</h3>
+            <p>Với đội ngũ hơn 10 năm kinh nghiệm</p>
+          </div>
+          <div class="col-xl col-12">
+            <i class="fa-solid fa-user-gear fa-5x mb-3"></i>
+            <h3>Cá nhân hoá</h3>
+            <p>Các tour được thiết kế riêng dành cho bạn</p>
+          </div>
+        </div>
+        <div class="row justify-content-center my-5">
+          <div class="col-xl col-12">
+            <i class="fa-solid fa-hand-holding-dollar fa-5x mb-3"></i>
+            <h3>Giá cả phải chăng</h3>
+            <p>Tận hưởng các gói du lịch với chi phí tốt nhất</p>
+          </div>
+          <div class="col-xl col-12">
+            <i class="fa-solid fa-user-tie fa-5x mb-3"></i>
+            <h3>Hỗ trợ 24/7</h3>
+            <p>Dịch vụ chăm sóc khách hàng luôn có mặt khi bạn cần</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reasons -->
+              <div class="container">
           <h3>Ưu đãi tour giờ chót</h3>
           <div class="row">
             <div class="col-sm">
@@ -252,9 +388,8 @@
           </div>
         </div>
       </div>
+      
     </main>
-
-
     <div class="footer-dark">
       <footer>
         <div class="container">
@@ -300,8 +435,31 @@
           <p class="copyright">Bản quyền thuộc về Tripster.com &copy; 2023</p>
         </div>
       </footer>
-
     </div>
-    
   </body>
 </html>
+
+<!-- <div class="container my-5 about-us">
+  <div class="row">
+    <div class="col-md-6 col-12 lh-lg fs-6">
+      <h1 class="mb-5">Về chúng tôi</h1>
+      <p>
+        <b>Tripster</b> luôn gắn các giá trị văn hóa bản địa với mọi hoạt
+        động kinh doanh để tạo ra chuỗi giá trị mang thương hiệu
+        Saigontourist trong nỗ lực quảng bá hình ảnh du lịch Việt Nam đến
+        với bạn bè quốc tế, góp phần đưa du lịch trở thành ngành kinh tế
+        mũi nhọn. Triết lý kinh doanh của chúng tôi là động lực thúc đẩy
+        hướng đi thống nhất của tập thể Saigontourist Group, với mục tiêu
+        doanh nghiệp luôn đồng hành cùng xã hội, cộng đồng để phát triển
+        kinh tế và các giá trị tinh thần, nhân văn.
+      </p>
+    </div>
+    <div class="d-flex col-md-6 col-12">
+      <img
+        src="/assets/img/homepage/about_us.png"
+        class="img-fluid rounded-3"
+        alt=""
+      />
+    </div>
+  </div>
+</div> -->
