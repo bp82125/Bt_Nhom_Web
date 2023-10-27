@@ -1,16 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Hello</h1>
-    <p>AAAAAAAAAAAAAAAAAAAA</p>
-    <h2>hi</h2>
-    <p>hhhhhhhhhhhhhh</p>
-     <p>xin chao</p>
-  </body>
-</html>
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Wed</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="inner-header container">
+                <a href="" id="logo">Tripster</a>
+                <nav>
+                    <ul id="main-menu">
+                        <li><a href="">Trang chủ</a></li>
+                        <li><a href="">Du lịch</a></li>
+                        <li><a href="">Vận chuyển</a></li>
+                        <li><a href="">Tin tức</a></li>
+                        <li><a href="">Khuyến mãi</a></li>
+                        <li><a href="">Liên hệ</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div id="banner">
+        </div>
+        <div id="content" class="container">
+            <h1>Tiêu đề</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptates, repellendus corrupti veniam
+                quas ipsam cupiditate optio ex doloribus necessitatibus hic non earum ratione, quaerat culpa voluptate
+                laudantium qui, maxime rem aliquam nulla dolorum assumenda eos.
+                Dolor assumenda repellendus aut ad libero eveniet officiis animi ullam ipsa consectetur et dolores
+                accusamus sint quis aliquid, facilis beatae veniam fugiat! Dolores maxime sint, itaque ab eius officiis
+                sed.
+                Architecto, temporibus id pariatur veritatis nesciunt sunt aut non dolore, illo totam incidunt, facilis
+                maxime quod ipsam cum ipsa labore molestias nostrum voluptate aspernatur recusandae enim! Debitis beatae
+                assumenda distinctio ipsa nesciunt ea cupiditate?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptates, repellendus corrupti veniam
+                quas ipsam cupiditate optio ex doloribus necessitatibus hic non earum ratione, quaerat culpa voluptate
+                laudantium qui, maxime rem aliquam nulla dolorum assumenda eos.
+                Dolor assumenda repellendus aut ad libero eveniet officiis animi ullam ipsa consectetur et dolores
+                accusamus sint quis aliquid, facilis beatae veniam fugiat! Dolores maxime sint, itaque ab eius officiis
+                sed.
+                Architecto, temporibus id pariatur veritatis nesciunt sunt aut non dolore, illo totam incidunt, facilis
+                maxime quod ipsam cum ipsa labore molestias nostrum voluptate aspernatur recusandae enim! Debitis beatae
+                assumenda distinctio ipsa nesciunt ea cupiditate?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptates, repellendus corrupti veniam
+                quas ipsam cupiditate optio ex doloribus necessitatibus hic non earum ratione, quaerat culpa voluptate
+                laudantium qui, maxime rem aliquam nulla dolorum assumenda eos.
+                Dolor assumenda repellendus aut ad libero eveniet officiis animi ullam ipsa consectetur et dolores
+                accusamus sint quis aliquid, facilis beatae veniam fugiat! Dolores maxime sint, itaque ab eius officiis
+                sed.
+                Architecto, temporibus id pariatur veritatis nesciunt sunt aut non dolore, illo totam incidunt, facilis
+                maxime quod ipsam cum ipsa labore molestias nostrum voluptate aspernatur recusandae enim! Debitis beatae
+                assumenda distinctio ipsa nesciunt ea cupiditate?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptates, repellendus corrupti veniam
+                quas ipsam cupiditate optio ex doloribus necessitatibus hic non earum ratione, quaerat culpa voluptate
+                laudantium qui, maxime rem aliquam nulla dolorum assumenda eos.
+                Dolor assumenda repellendus aut ad libero eveniet officiis animi ullam ipsa consectetur et dolores
+                accusamus sint quis aliquid, facilis beatae veniam fugiat! Dolores maxime sint, itaque ab eius officiis
+                sed.
+                Architecto, temporibus id pariatur veritatis nesciunt sunt aut non dolore, illo totam incidunt, facilis
+                maxime quod ipsam cum ipsa labore molestias nostrum voluptate aspernatur recusandae enim! Debitis beatae
+                assumenda distinctio ipsa nesciunt ea cupiditate?</p>
+
+
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script>
+            $(document).ready(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop()) {
+                        $('header').addClass('sticky');
+                    } else {
+                        $('header').removeClass('sticky');
+                    }
+                });
+            });
+        </script>
+</body>
+
+</html>
