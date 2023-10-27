@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "Poppins Regular";
+  src: url("/assets/font/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins ExtraBold";
+  src: url("/assets/font/Poppins-ExtraBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  z-index: 1000;
+  font-family: "Poppins Regular", sans-serif;
+}
+
+.navbar-brand img {
+  height: 64px;
+}
+
+.navbar-brand {
+  font-family: "Poppins ExtraBold", sans-serif;
+}
+
+.nav-link:hover {
+  background-color: #0d6efd;
+}
+
+.dropdown-menu form {
+  min-width: 400px;
+}
+
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
+  z-index: 1; /* Ensure the gradient is above the image */
+}
+
+.carousel-item img {
+  height: 100vh;
+  object-fit: cover;
+}
+
+.about-us img {
+  max-height: 500px;
+}
+
+.about-us p {
+  text-align: justify;
+}
+
+.reasons {
+  color: #0c274e;
+}
+
+body {
+  font-family: "Poppins Regular", sans-serif;
+}
+
+h1 {
+  font-family: "Poppins ExtraBold", sans-serif;
+}
