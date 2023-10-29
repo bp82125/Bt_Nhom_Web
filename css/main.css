@@ -22,7 +22,7 @@ main {
     radial-gradient(at 56% 86%, rgb(255, 255, 255) 0px, transparent 50%),
     radial-gradient(at 69% 44%, rgb(255, 255, 255) 0px, transparent 50%),
     radial-gradient(at 100% 100%, hsla(204, 100%, 73%, 1) 0px, transparent 50%),
-    radial-gradient(at 95% 5%, hsla(302, 81%, 90%, 1) 0px, transparent 50%);
+    radial-gradient(at 56% 50%, hsla(302, 81%, 90%, 1) 0px, transparent 50%);
 }
 
 h1 {
@@ -191,12 +191,12 @@ h2 {
   margin: 0;
 }
 
-p {
-  /* font-family: "Space Grotesk", sans-serif; */
+/*p {
+  font-family: "Space Grotesk", sans-serif; 
   font-weight: 400;
   font-size: 1.4rem;
   margin: 0;
-}
+}*/
 
 .main-img {
   max-width: 150%;
