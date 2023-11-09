@@ -1,0 +1,137 @@
+.navbar {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    z-index: 1000;
+    font-family: "Poppins Regular", sans-serif;
+}
+
+main {
+    margin-top: var(--header-height);
+    background: radial-gradient(at 0% 0%, hsla(204, 100%, 73%, 1) 0px, transparent 50%),
+      radial-gradient(at 13% 36%, rgb(241, 238, 238) 0px, transparent 50%),
+      radial-gradient(at 56% 86%, rgb(221, 202, 202) 0px, transparent 50%),
+      radial-gradient(at 69% 44%, rgb(247, 229, 229) 0px, transparent 50%),
+      radial-gradient(at 100% 100%, rgb(214, 227, 240) 0px, transparent 50%),
+      radial-gradient(at 56% 50%, hsla(302, 81%, 90%, 1) 0px, transparent 50%);
+  }
+  
+
+.container-xxl {
+    max-width: 1320px;
+}
+
+main .login, main .signup, main .recovery {
+    padding: 72px;
+}
+
+.signup .signup-background {
+    position: relative;
+    display: block;
+    background: url(/assets/img/homepage/signup.jpg);
+    /* overflow: hidden;
+    filter: brightness(60%); */
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.signup .signup-form {
+    background-color: rgb(255, 255, 255);
+    border-radius: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 32px;
+}
+
+.signup .signup-gg-btn {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border: 1px solid black;
+    border-radius: 8px;
+    color: var(--main-color);
+    margin: 16px 0;
+}
+
+.input {
+    border: 1px solid black;
+    border-radius: 8px;
+    height: 40px;
+    width: 100%;
+    margin: 4px 0;
+    padding: 0 12px;
+}
+
+.signup .or {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.signup .or span {
+    height: 1px;
+    width: 50%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.signup .agree-term {
+    font-size: 14px;
+}
+
+.form-check {
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 1.5em;
+    margin-bottom: 0.125rem;
+}
+
+.signup .agree-term .form-check-input {
+    box-shadow: none;
+    outline: none;
+    border: 1px solid black;
+    margin-right: 8px;
+}
+
+.signup .agree-term label {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+}
+
+.signup .agree-term label span {
+    font-weight: 700;
+}
+
+.invalid-feedback {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+}
+
+.signup .signup-btn {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    width: 100%;
+    margin: 12px 0;
+}
+
+.signup .login-link {
+    padding: 0;
+    text-decoration: none;
+    color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.signup .login-link span:nth-child(2) {
+    text-decoration: underline;
+    font-weight: 600;
+}
