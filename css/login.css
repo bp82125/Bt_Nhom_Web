@@ -1,0 +1,32 @@
+main {
+  background: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.9) 80%),
+    url("/assets/img/login/login2.jpg");
+  background-size: cover; /* Cover the entire viewport */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  height: 100vh;
+}
+
+footer {
+  background-color: #282d32;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.login .or span {
+  height: 1px;
+  width: 50%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+form input[type="checkbox"]:checked {
+  background-color: #212529 !important;
+}
+
+form .check-n-pwd {
+  font-size: 14px;
+}
