@@ -1,22 +1,26 @@
-(() => {
-  "use strict";
+document.addEventListener("DOMContentLoaded", function () {
+  var form = document.getElementById("loginForm");
 
-  // Fetch all the forms we want to apply custom Bootstrap validation styles to
-  const forms = document.querySelectorAll(".needs-validation");
+  form.addEventListener("submit", function (event) {
+    var emailInput = document.getElementById("floatingInput");
 
-  // Loop over them and prevent submission
-  Array.from(forms).forEach((form) => {
-    form.addEventListener(
-      "submit",
-      (event) => {
-        if (!form.checkValidity()) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
+    if (!form.checkValidity()) {
+      // If the form is not valid
+      event.preventDefault(); // Prevent form submission
+      event.stopPropagation(); // Stop event propagation
+    }
 
-        form.classList.add("was-validated");
-      },
-      false
-    );
+    if (!isValidEmail(emailInput.value)) {
+      // If the email is not valid
+      event.preventDefault(); // Prevent form submission
+    }
+
+    form.classList.add("was-validated");
   });
-})();
+
+  function isValidEmail(email) {
+    // Regular expression for validating an Email
+    var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return emailRegex.test(email);
+  }
+});

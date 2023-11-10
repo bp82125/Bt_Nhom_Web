@@ -30,3 +30,23 @@ form input[type="checkbox"]:checked {
 form .check-n-pwd {
   font-size: 14px;
 }
+
+.was-validated .form-control:invalid,
+.form-control.is-invalid,
+.was-validated .form-control:valid,
+.form-control.is-valid {
+  padding-right: 0.75rem;
+}
+
+.form-check-input.is-invalid,
+.form-check-input.is-valid {
+  border-color: #ced4da; /* Reset the border color for the checkbox */
+}
+.form-check-input.is-invalid:focus,
+.form-check-input.is-valid:focus {
+  border-color: #ced4da; /* Reset the border color for the checkbox on focus */
+}
+.form-check-label.is-invalid,
+.form-check-label.is-valid {
+  color: #495057; /* Reset the text color for the label */
+}
