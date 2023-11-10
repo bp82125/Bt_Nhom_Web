@@ -31,8 +31,6 @@ main .login, main .signup, main .recovery {
     position: relative;
     display: block;
     background: url(/assets/img/homepage/signup.jpg);
-    /* overflow: hidden;
-    filter: brightness(60%); */
     background-position: center;
     background-size: cover;
     border-top-left-radius: 10px;
@@ -51,13 +49,18 @@ main .login, main .signup, main .recovery {
 .signup .signup-gg-btn {
     height: 40px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 16px;
     border: 1px solid black;
-    border-radius: 8px;
-    color: var(--main-color);
-    margin: 16px 0;
+    transition: transform 0.2s ease-in-out;
+}
+
+.signup .signup-gg-btn:hover {
+    transform: scale(0.95);
+}
+
+.signup .signup-gg-btn:active{
+    background-color: black;
+    color: white;
 }
 
 .input {
@@ -71,8 +74,6 @@ main .login, main .signup, main .recovery {
 
 .signup .or {
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 16px;
 }
 
@@ -119,12 +120,16 @@ main .login, main .signup, main .recovery {
     border-radius: 8px;
     width: 100%;
     margin: 12px 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.signup .signup-btn:hover {
+    transform: scale(0.95);
 }
 
 .signup .login-link {
     padding: 0;
     text-decoration: none;
-    color: var(--main-color);
     display: flex;
     justify-content: center;
     gap: 8px;
@@ -134,4 +139,14 @@ main .login, main .signup, main .recovery {
 .signup .login-link span:nth-child(2) {
     text-decoration: underline;
     font-weight: 600;
+}
+
+.invalid-feedback {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+}
+
+.modal-backdrop.fade {
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 1;
 }

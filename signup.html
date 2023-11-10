@@ -55,8 +55,6 @@
       referrerpolicy="no-referrer"
     ></script>
     <!-- Popper JS -->
-
-    <!-- <script src="/js/script.js"></script> -->
   </head>
   <body>
     <!-- Navbar -->
@@ -169,36 +167,7 @@
         tabindex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
-      >
-        <!-- <div class="modal-dialog modal-dialog-scrollable">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h2 class="modal-title fs-4" id="exampleModalLabel">Giỏ hàng</h2>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <div class="container-fluid"></div>
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-outline-dark"
-                data-bs-dismiss="modal"
-              >
-                Đóng
-              </button>
-              <button type="button" class="btn move-to-cart-btn">
-                Đến giỏ hàng
-              </button>
-            </div>
-          </div>
-        </div> -->
-      </div>
+      ></div>
 
       <div class="signup container-xxl">
         <div class="row">
@@ -207,13 +176,16 @@
           <form class="signup-form row needs-validation col-md-6" novalidate>
             <h2 class="text-center">Chào mừng bạn đến với Tripster.</h2>
             <div class="col-12">
-              <button type="button" class="btn signup-gg-btn input">
+              <button
+                type="button"
+                class="btn signup-gg-btn input justify-content-center align-items-center"
+              >
                 <i class="fa-brands fa-google"></i>
                 Đăng kí với Google
               </button>
             </div>
 
-            <div class="or col-12">
+            <div class="or col-12 justify-content-center align-items-center">
               <span></span>
               <p>or</p>
               <span></span>
@@ -330,17 +302,59 @@
               </button>
             </div>
 
-            <a href="../Login/login.html" class="login-link">
+            <a href="../Login/login.html" class="login-link text-black">
               <span>Đã có tài khoản?</span>
               <span>Đăng nhập ngay</span>
             </a>
           </form>
         </div>
       </div>
+      <button
+        type="button"
+        class="btn btn-primary modal-message-btn"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+        style="display: none"
+      >
+        Launch demo modal
+      </button>
+
+      <!-- Modal -->
+      <div
+        class="modal message fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Thông báo</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer" style="border: none">
+              <button
+                type="button"
+                class="btn btn-dark"
+                data-bs-dismiss="modal"
+              >
+                OK
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
-    <div class="footer-dark">
-      <footer>
+    <footer>
+      <div class="footer-dark">
         <div class="container">
           <div class="row">
             <div class="col-md-3 item text">
@@ -386,7 +400,10 @@
           </div>
           <p class="copyright">Bản quyền thuộc về Tripster.com &copy; 2023</p>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
+
+    <script src="/js/validator.js"></script>
+    <script src="/js/signup.js"></script>
   </body>
 </html>
