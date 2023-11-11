@@ -16,7 +16,9 @@
 
     <!-- Local CSS -->
     <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/main.css" />
+
+    <link rel="stylesheet" href="/css/homepage.css" />
+
     <!-- Local CSS -->
 
     <!-- Bootstrap JS -->
@@ -116,7 +118,7 @@
               <li class="nav-item px-2">
                 <a
                   class="nav-link text-white fs-5 rounded-pill px-3 my-2"
-                  href="#"
+                  href="signup.html"
                   >Đăng Ký</a
                 >
               </li>
@@ -293,6 +295,7 @@
             <i class="fa-solid fa-award fa-5x mb-3"></i>
             <h3>Chuyên nghiệp</h3>
             <p class="fs-5">Với đội ngũ hơn 10 năm kinh nghiệm</p>
+
           </div>
           <div class="col-xl col-12">
             <i class="fa-solid fa-user-gear fa-5x mb-3"></i>
@@ -306,6 +309,7 @@
             <h3>Giá cả phải chăng</h3>
             <p class="fs-5">Tận hưởng các gói du lịch với chi phí tốt nhất</p>
           </div>
+
           <div class="col-xl col-12">
             <i class="fa-solid fa-user-tie fa-5x mb-3"></i>
             <h3>Hỗ trợ 24/7</h3>
@@ -340,7 +344,11 @@
                   <b>3,890,000₫</b>
                   <br />
                 </p>
-                <a href="#" class="btn btn-primary mt-4 mb-3">Đặt ngay</a>
+
+                <div class="d-flex justify-content-around">
+                  <a href="#" class="btn btn-primary mt-4 mb-3">Đặt ngay</a>
+                </div>
+
               </div>
             </div>
           </div>
@@ -363,7 +371,11 @@
                   <br />
                   <b>5,590,000₫</b>
                 </p>
-                <a href="#" class="btn btn-primary mt-4 mb-3">Đặt ngay</a>
+
+                <div class="d-flex justify-content-around">
+                  <a href="#" class="btn btn-primary mt-4 mb-3">Đặt ngay</a>
+                </div>
+
               </div>
             </div>
           </div>
@@ -386,7 +398,11 @@
                   <br />
                   <b>6,490,000₫</b>
                 </p>
-                <a href="#" class="btn btn-primary mt-4 mb-3">Đặt ngay</a>
+
+                <div class="d-flex justify-content-around">
+                  <a href="#" class="btn btn-primary mt-4 mb-3">Đặt ngay</a>
+                </div>
+
               </div>
             </div>
           </div>
@@ -395,12 +411,25 @@
             <div class="row">
               <div class="col-sm-9">
                 <div class="row">
-                  <div class="col-8 col-sm-6">
+
+                  <div class="col-8 col-sm-6 position-relative">
                     <div class="card-info">
                       <h3>Tin tức mới nhất về du lịch</h3>
                       <h4>Khám phá thế giới, khám phá chính mình.</h4>
-                      <a href="#" class="btn btn-primary">Khám phá ngay</a>
+                      <div
+                        class="position-absolute top-50 start-50 translate-middle-y"
+                      >
+                        <a href="#" class="btn btn-primary">Khám phá ngay</a>
+                      </div>
                     </div>
+                  </div>
+                  <div class="col-4 col-sm-6">
+                    <img
+                      class="main-img"
+                      src="/assets/img/homepage/duLich.jpeg"
+                      alt=""
+                    />
+
                   </div>
                   <div class="col-4 col-sm-6">
                     <img
@@ -421,7 +450,7 @@
       <footer>
         <div class="container">
           <div class="row">
-            <div class="col-md-3 item text">
+            <div class="col-md-3 item text ml-3 mr-3">
               <h3>Tripster.com</h3>
               <p>
                 Không có giới hạn trong việc khám phá thế giới. Chúng tôi là
