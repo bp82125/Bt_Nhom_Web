@@ -1,4 +1,4 @@
-/* @font-face {
+@font-face {
     font-family: "Poppins Regular";
     src: url("/assets/font/Poppins-Regular.ttf") format("truetype");
     font-weight: normal;
@@ -10,18 +10,16 @@
     src: url("/assets/font/Poppins-ExtraBold.ttf") format("truetype");
     font-weight: bold;
     font-style: normal;
-} */
+}
 
-
-/* nav {
+nav {
     transition: all 0.25s ease-in-out;
-} */
+}
 
-
-/* nav.sticky {
-  background: #ffffff;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
-} */
+nav.sticky {
+    background: #ffffff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
 
 
 /* nav a:hover {
@@ -29,7 +27,7 @@
 } */
 
 .navbar {
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
