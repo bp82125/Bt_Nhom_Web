@@ -23,3 +23,7 @@
 .item-new>.text-black:hover {
     font-size: 1.1em;
 }
+
+.dropdown-menu form {
+    min-width: 400px;
+}
