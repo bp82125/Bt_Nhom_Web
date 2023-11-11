@@ -12,6 +12,8 @@
     font-style: normal;
 }
 
+/* Navbar */
+
 nav {
     transition: all 0.25s ease-in-out;
 }
@@ -52,35 +54,35 @@ nav.sticky {
     min-width: 400px;
 }
 
-.carousel-item::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
-    z-index: 1;
-    /* Ensure the gradient is above the image */
+
+/* Navbar */
+
+/* footer */
+
+footer {
+  background-color: #282d32;
+  color: white;
 }
 
-.carousel-item img {
-    height: 100vh;
-    object-fit: cover;
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-
-/* .about-us img {
-  max-height: 700px;
-} */
-
-.about-us p {
-    text-align: justify;
+footer ul li a,
+footer .social-media a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
 }
 
-.reasons {
-    color: #0c274e;
+footer ul li a:hover,
+footer .social-media a:hover {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
 }
+
+/* footer */
 
 body {
     font-family: "Poppins Regular", sans-serif;
