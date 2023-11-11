@@ -12,6 +12,8 @@
   font-style: normal;
 }
 
+/* Navbar */
+
 nav {
   transition: all 0.25s ease-in-out;
 }
@@ -51,33 +53,34 @@ nav a:hover {
   min-width: 400px;
 }
 
+/* Navbar */
+
 /* footer */
 
-.footer-dark .item.social > a {
-  font-size: 20px;
-  width: 36px;
-  height: 36px;
-  line-height: 36px;
-  display: inline-block;
-  text-align: center;
-  border-radius: 50%;
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
-  margin: 0 8px;
-  color: #fff;
-  opacity: 0.75;
+footer {
+  background-color: #282d32;
+  color: white;
 }
 
-.footer-dark .item.social > a:hover {
-  opacity: 0.9;
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-.footer-dark .copyright {
-  text-align: center;
-  padding-top: 16px;
-  opacity: 0.3;
-  font-size: 13px;
-  margin-bottom: 0;
+footer ul li a,
+footer .social-media a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
 }
+
+footer ul li a:hover,
+footer .social-media a:hover {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+}
+
+/* footer */
 
 body {
   font-family: "Poppins Regular", sans-serif;
