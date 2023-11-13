@@ -115,14 +115,14 @@
               <li class="nav-item px-2">
                 <a
                   class="nav-link text-black fs-5 rounded-pill px-3 my-2"
-                  href="#"
+                  href="/signup.html"
                   >Đăng Ký</a
                 >
               </li>
               <li class="nav-item px-2">
                 <a
                   class="nav-link text-black fs-5 rounded-pill px-3 my-2"
-                  href="#"
+                  href="/login.html"
                   >Đăng Nhập</a
                 >
               </li>
@@ -169,21 +169,15 @@
         aria-hidden="true"
       ></div>
 
-      <div class="signup container-xxl">
-        <!-- <div class="row">
-          <div class="signup-background col-md-6"></div> -->
-
-          <form class="signup-form row needs-validation col-md-6 d-flex justify-content-center align-items-center align-content-center" novalidate>
+      <div class="signup .container-fluid py-5 d-flex justify-content-center">
+        <div
+          class="row d-flex justify-content-xl-between justify-content-center"
+        >
+          <form
+            class="signup-form needs-validation col-auto m-5 p-5 bg-white rounded shadow"
+            novalidate
+          >
             <h2 class="text-center">Chào mừng bạn đến với Tripster.</h2>
-            <!-- <div class="col-12">
-              <button
-                type="button"
-                class="btn signup-gg-btn input justify-content-center align-items-center"
-              >
-                <i class="fa-brands fa-google"></i>
-                Đăng kí với Google
-              </button>
-            </div> -->
             <div class="google-login my-3">
               <script
                 src="https://accounts.google.com/gsi/client"
@@ -205,11 +199,15 @@
               ></div>
             </div>
 
-            <div class="or col-12 justify-content-center align-items-center">
+            <!-- Or -->
+            <div
+              class="or col-12 d-flex g-3 justify-content-center align-items-center"
+            >
               <span></span>
-              <p>or</p>
+              <p class="m-0 mx-3">Hoặc</p>
               <span></span>
             </div>
+            <!-- Or -->
 
             <div class="col-12">
               <label for="validationCustom03" class="form-label"
@@ -322,7 +320,10 @@
               </button>
             </div>
 
-            <a href="../Login/login.html" class="login-link text-black">
+            <a
+              href="/login.html"
+              class="login-link text-black mt-2 d-flex justify-content-center text-decoration-none"
+            >
               <span>Đã có tài khoản?</span>
               <span>Đăng nhập ngay</span>
             </a>
@@ -374,50 +375,93 @@
     </main>
 
     <footer>
-      <div class="footer-dark">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3 item text">
-              <h3>Tripster.com</h3>
-              <p>
-                Không có giới hạn trong việc khám phá thế giới. Chúng tôi là
-                người bạn đồng hành đáng tin cậy trên mỗi hành trình của bạn.
-              </p>
-            </div>
-
-            <div class="col-md-3 item">
-              <h3>Du lịch</h3>
-              <ul>
-                <li><a href="#">Miền Bắc</a></li>
-                <li><a href="#">Miền Trung</a></li>
-                <li><a href="#">Miền nam</a></li>
-              </ul>
-            </div>
-            <div class="col-md-3 item">
-              <h3>Hỗ trợ</h3>
-              <ul>
-                <li><a href="#">Đăng ký dịch vụ</a></li>
-                <li><a href="#">Email cho chúng tôi</a></li>
-                <li><a href="#">Diễn đàn</a></li>
-              </ul>
-            </div>
-            <div class="col-md-3 item">
-              <h3>Tìm hiểu thêm</h3>
-              <ul>
-                <li><a href="#">Tripster.com</a></li>
-                <li><a href="#">Dịch vụ tư vấn</a></li>
-                <li><a href="#">Điều khoản dịch vụ</a></li>
-              </ul>
-            </div>
-
-            <div class="col item social">
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-youtube"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-google"></i></a>
-            </div>
+      <div class="container-fluid">
+        <div
+          class="row p-5 d-flex justify-content-center text-xxl-start text-center"
+        >
+          <div class="col-xxl-3 col-12 mx-5 mt-5">
+            <h2>Tripster.com</h2>
+            <p class="mt-5">
+              Không có giới hạn trong việc khám phá thế giới. Chúng tôi là người
+              bạn đồng hành đáng tin cậy trên mỗi hành trình của bạn.
+            </p>
           </div>
+          <div class="col-xxl-auto col-12 mx-5 mt-5 text-xxl-start text-center">
+            <h2>Du lịch</h2>
+            <ul class="mt-5">
+              <li class="my-2">
+                <a href="#" class="link-offset-2 link-underline-opacity-0"
+                  >Miền Bắc</a
+                >
+              </li>
+              <li class="my-2">
+                <a href="#" class="link-offset-2 link-underline-opacity-0"
+                  >Miền Trung</a
+                >
+              </li>
+              <li class="my-2">
+                <a href="#" class="link-offset-2 link-underline-opacity-0"
+                  >Miền nam</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-xxl-auto col-12 mx-5 mt-5 text-xxl-start text-center">
+            <h2>Hỗ trợ</h2>
+            <ul class="mt-5">
+              <li class="my-2">
+                <a href="#" class="link-offset-2 link-underline-opacity-0"
+                  >Đăng ký dịch vụ</a
+                >
+              </li>
+              <li class="my-2">
+                <a href="#" class="link-offset-2 link-underline-opacity-0"
+                  >Email cho chúng tôi</a
+                >
+              </li>
+              <li class="my-2">
+                <a href="#" class="link-offset-2 link-underline-opacity-0"
+                  >Diễn đàn</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-xxl-auto col-12 mx-5 mt-5 text-xxl-start text-center">
+            <h2>Tìm hiểu thêm</h2>
+            <ul class="mt-5">
+              <li class="my-2">
+                <a href="#" class="link-offset-2 link-underline-opacity-0"
+                  >Tripster.com</a
+                >
+              </li>
+              <li class="my-2">
+                <a href="#" class="link-offset-2 link-underline-opacity-0"
+                  >Dịch vụ tư vấn</a
+                >
+              </li>
+              <li class="my-2">
+                <a href="#" class="link-offset-2 link-underline-opacity-0"
+                  >Điều khoản dịch vụ</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="row text-center social-media">
+          <div class="col-12 text-center">
+            <a href="#"
+              ><i class="fa-brands fa-facebook fa-2x mx-2 py-3"></i
+            ></a>
+            <a href="#"><i class="fa-brands fa-twitter fa-2x mx-2 py-3"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube fa-2x mx-2 py-3"></i></a>
+            <a href="#"
+              ><i class="fa-brands fa-instagram fa-2x mx-2 py-3"></i
+            ></a>
+            <a href="#"><i class="fa-brands fa-google fa-2x mx-2 py-3"></i></a>
+          </div>
+        </div>
+        <div class="row text-center">
           <p class="copyright">Bản quyền thuộc về Tripster.com &copy; 2023</p>
         </div>
       </div>
