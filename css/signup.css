@@ -10,57 +10,11 @@
 
 main {
     margin-top: var(--header-height);
-    background: radial-gradient(at 0% 0%, hsla(204, 100%, 73%, 1) 0px, transparent 50%),
-      radial-gradient(at 13% 36%, rgb(241, 238, 238) 0px, transparent 50%),
-      radial-gradient(at 56% 86%, rgb(221, 202, 202) 0px, transparent 50%),
-      radial-gradient(at 69% 44%, rgb(247, 229, 229) 0px, transparent 50%),
-      radial-gradient(at 100% 100%, rgb(214, 227, 240) 0px, transparent 50%),
-      radial-gradient(at 56% 50%, hsla(302, 81%, 90%, 1) 0px, transparent 50%);
-  }
-  
-
-.container-xxl {
-    max-width: 1320px;
-}
-
-main .login, main .signup, main .recovery {
-    padding: 72px;
-}
-
-.signup .signup-background {
-    position: relative;
-    display: block;
-    background: url(/assets/img/homepage/signup.jpg);
-    background-position: center;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.5), transparent),
+      url(/assets/img/login/login.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.signup .signup-form {
-    background-color: rgb(255, 255, 255);
-    border-radius: 0;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding: 32px;
-}
-
-.signup .signup-gg-btn {
-    height: 40px;
-    display: flex;
-    gap: 16px;
-    border: 1px solid black;
-    transition: transform 0.2s ease-in-out;
-}
-
-.signup .signup-gg-btn:hover {
-    transform: scale(0.95);
-}
-
-.signup .signup-gg-btn:active{
-    background-color: black;
-    color: white;
+    background-position: bottom;
 }
 
 .input {
@@ -72,16 +26,12 @@ main .login, main .signup, main .recovery {
     padding: 0 12px;
 }
 
-.signup .or {
-    display: flex;
-    gap: 16px;
-}
-
 .signup .or span {
     height: 1px;
     width: 50%;
     background: rgba(0, 0, 0, 0.5);
 }
+
 .signup .agree-term {
     font-size: 14px;
 }
@@ -128,10 +78,6 @@ main .login, main .signup, main .recovery {
 }
 
 .signup .login-link {
-    padding: 0;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
     gap: 8px;
     font-size: 14px;
 }
