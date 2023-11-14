@@ -16,8 +16,7 @@
 
     <!-- Local CSS -->
     <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="css/login.css" />
-    <link rel="stylesheet" href="/css/recovery.css" />
+    <link rel="stylesheet" href="/css/contact.css" />
     <!-- Local CSS -->
 
     <!-- Bootstrap JS -->
@@ -170,48 +169,171 @@
         aria-hidden="true"
       ></div>
 
-      <div class="login container-fluid py-5">
-        <div class="row d-flex justify-content-center mx-3">
-          <form
-            class="login-form needs-validation col-auto col-xl-4 m-5 p-5 bg-white rounded shadow"
-          >
-            <h2 class="text-center">Chào mừng bạn đến với Tripster.</h2>
-            <div class="col-12 mt-4">
-              <label for="validationCustom02" class="form-label">Email *</label>
-              <input
-                type="email"
-                class="form-control input email-input"
-                id="validationCustom02"
-                autocomplete="off"
-                placeholder="Nhập địa chỉ email"
-                required
-              />
-              <div
-                class="invalid-feedback"
-                style="height: 20px; display: block"
-              ></div>
-            </div>
-            <div id="passwordRecovery" class="form-text">
-              Hãy nhập địa chỉ email mà bạn muốn khôi phục mật khẩu. Chúng tôi
-              sẽ gửi email để hướng dẫn các bước kế tiếp.
-            </div>
-
-            <div class="my-4">
-              <button class="btn signup-btn submit-btn" type="submit">
-                Khôi phục mật khẩu
-              </button>
-            </div>
-
-            <hr />
-
-            <a
-              href="./signup.html"
-              class="signup-link text-black mt-2 d-flex justify-content-center text-decoration-none"
+      <div class="container-fluid py-5 d-flex justify-content-center">
+        <div
+          class="row d-flex justify-content-center mx-3 w-100 align-items-center"
+        >
+          <div class="col-6">
+            <form
+              class="login-form needs-validation col-auto m-5 p-5 bg-white rounded shadow"
+              novalidate
             >
-              <span>Chưa có tài khoản?</span>
-              <span>Đăng ký ngay</span>
-            </a>
-          </form>
+              <h2 class="text-center mb-5">Liên hệ với chúng tôi</h2>
+
+              <div class="row">
+                <div class="col-4 mt-4">
+                  <label for="validationCustom02" class="form-label"
+                    >Họ tên *</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control input email-input"
+                    id="validationCustom02"
+                    autocomplete="off"
+                    placeholder="Nhập đầy đủ họ và tên"
+                    required
+                  />
+                  <div
+                    class="invalid-feedback"
+                    style="height: 20px; display: block"
+                  ></div>
+                </div>
+                <div class="col-4 mt-4">
+                  <label for="validationCustom02" class="form-label"
+                    >Email *</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control input email-input"
+                    id="validationCustom02"
+                    autocomplete="off"
+                    placeholder="Nhập địa chỉ email"
+                    required
+                  />
+                  <div
+                    class="invalid-feedback"
+                    style="height: 20px; display: block"
+                  ></div>
+                </div>
+                <div class="col-4 mt-4">
+                  <label for="validationCustom02" class="form-label"
+                    >Số điện thoại *</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control input email-input"
+                    id="validationCustom02"
+                    autocomplete="off"
+                    placeholder="Nhập số điện thoại"
+                    required
+                  />
+                  <div
+                    class="invalid-feedback"
+                    style="height: 20px; display: block"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-4 mt-4">
+                  <label for="validationCustom02" class="form-label"
+                    >Loại thông tin *</label
+                  >
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option value="1">Du lịch</option>
+                    <option value="2">Chăm sóc khách hàng</option>
+                    <option value="3">Liên hệ thông tin khác</option>
+                  </select>
+                </div>
+                <div class="col-4 mt-4">
+                  <label for="validationCustom02" class="form-label"
+                    >Tên đơn vị</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control input email-input"
+                    id="validationCustom02"
+                    autocomplete="off"
+                    placeholder="Nhập tên công ty, tên tổ chức"
+                  />
+                </div>
+                <div class="col-4 mt-4">
+                  <label for="validationCustom02" class="form-label"
+                    >Địa chỉ</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control input email-input"
+                    id="validationCustom02"
+                    autocomplete="off"
+                    placeholder="Nhập địa chỉ đơn vị"
+                  />
+                  <div
+                    class="invalid-feedback"
+                    style="height: 20px; display: block"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12">
+                  <label for="validationCustom05" class="form-label"
+                    >Tiêu đề *</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control input password-input"
+                    id="validationCustom05"
+                    minlength="8"
+                    placeholder="Nhập tiêu đề"
+                    required
+                  />
+                  <div
+                    class="invalid-feedback"
+                    style="height: 20px; display: block"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12">
+                  <label for="floatingTextarea2" class="form-label"
+                    >Nội dung *</label
+                  >
+                  <textarea
+                    class="form-control"
+                    placeholder="Nhập nội dung tại đây"
+                    id="floatingTextarea2"
+                    style="height: 200px; resize: none"
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="col-12 my-4 text-center">
+                <button
+                  class="btn signup-btn submit-btn btn-dark w-25"
+                  type="submit"
+                >
+                  Gửi
+                  <i
+                    class="fa-regular fa-paper-plane ms-2"
+                    style="color: #ffffff"
+                  ></i>
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-4">
+            <img
+              src="/assets/img/contact/contact2.jpg"
+              alt=""
+              class="img-fluid p-5"
+            />
+          </div>
         </div>
       </div>
       <button
