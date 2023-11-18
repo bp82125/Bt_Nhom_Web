@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tripster</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
@@ -107,6 +107,7 @@
                                     <button class="btn btn-outline-primary" style="white-space: nowrap" type="submit">
                       Tìm kiếm
                     </button>
+                                    <script src="js/search.js"></script>
                                 </form>
                             </div>
                         </li>
@@ -114,37 +115,7 @@
                 </div>
             </div>
         </nav>
-        <script>
-            function performSearch() {
-                // Lấy giá trị từ ô input
-                var searchTerm = document.getElementById('searchInput').value;
 
-                // Lặp qua tất cả các card có thuộc tính data-searchable
-                var cards = document.querySelectorAll('[data-searchable]');
-                cards.forEach(function(card) {
-                    // Lấy nội dung của card (ví dụ: tên tour)
-                    var cardContent = card.innerText.toLowerCase();
-
-                    // Kiểm tra xem nội dung có chứa từ khóa tìm kiếm không
-                    if (cardContent.includes(searchTerm.toLowerCase())) {
-                        // Nếu có, hiển thị card
-                        card.style.display = 'block';
-                    } else {
-                        // Ngược lại, ẩn card
-                        card.style.display = 'none';
-                    }
-                });
-            }
-
-            // Bắt sự kiện submit của form
-            document.getElementById('searchForm').addEventListener('submit', function(event) {
-                // Ngăn chặn hành động mặc định của form (không gửi request)
-                event.preventDefault();
-
-                // Thực hiện hàm tìm kiếm khi form được submit
-                performSearch();
-            });
-        </script>
     </header>
 
     <!-- tour -->
@@ -152,239 +123,226 @@
 
         <div class="row ">
             <!-- 1 -->
-            <div class=" col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4">
-                <div class="card" data-searchable>
-                    <img src="https://picsum.photos/200" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">5-Day Oahu Tour: Honolulu, Pearl Harbor, & Diamond Head</h5>
-                        <p class="card-text">Oahu, Hawaii</p>
-                        <p class="card-text">$199.99</p>
-                        <p class="card-text"><small class="text-muted">★★★★☆</small></p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
-                    </div>
+
+            <div class="card col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4" data-searchable>
+                <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">5-Day Oahu Tour: Honolulu, Pearl Harbor, & Diamond Head</h5>
+                    <p class="card-text">Oahu, Hawaii</p>
+                    <p class="card-text">$199.99</p>
+                    <p class="card-text"><small class="text-muted">★★★★☆</small></p>
+                    <a href="#" class="btn btn-primary">Book Now</a>
                 </div>
             </div>
+
             <!-- 2 -->
-            <div class=" col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4">
-                <div class="card" data-searchable>
-                    <img src="https://picsum.photos/200" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">5-Day Oahu Tour: Honolulu, Pearl Harbor, & Diamond Head</h5>
-                        <p class="card-text">Oahu, Hawaii</p>
-                        <p class="card-text">$199.99</p>
-                        <p class="card-text"><small class="text-muted">★★★★☆</small></p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
-                    </div>
+
+            <div class="card col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4" data-searchable>
+                <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">5-Day Oahu Tour: Honolulu, Pearl Harbor, & Diamond Head</h5>
+                    <p class="card-text">Oahu, Hawaii</p>
+                    <p class="card-text">$199.99</p>
+                    <p class="card-text"><small class="text-muted">★★★★☆</small></p>
+                    <a href="#" class="btn btn-primary">Book Now</a>
                 </div>
             </div>
             <!-- 3 -->
-            <div class=" col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4">
-                <div class="card" data-searchable>
-                    <img src="https://picsum.photos/200" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Molokini and Turtle Arches Snorkeling Trip</h5>
-                        <p class="card-text">vũng tàu</p>
-                        <p class="card-text">$299.99</p>
-                        <p class="card-text"><small class="text-muted">★★★★★</small></p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
-                    </div>
+
+            <div class="card col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4" data-searchable>
+                <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Molokini and Turtle Arches Snorkeling Trip</h5>
+                    <p class="card-text">vũng tàu</p>
+                    <p class="card-text">$299.99</p>
+                    <p class="card-text"><small class="text-muted">★★★★★</small></p>
+                    <a href="#" class="btn btn-primary">Book Now</a>
                 </div>
             </div>
             <!-- 4 -->
-            <div class=" col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4">
-                <div class="card" data-searchable>
-                    <img src="https://picsum.photos/200" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">5-Day Oahu Tour: Honolulu, Pearl Harbor, & Diamond Head</h5>
-                        <p class="card-text">Cần thơ</p>
-                        <p class="card-text">$199.99</p>
-                        <p class="card-text"><small class="text-muted">★★★★☆</small></p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
-                    </div>
+
+            <div class="card col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4" data-searchable>
+                <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">5-Day Oahu Tour: Honolulu, Pearl Harbor, & Diamond Head</h5>
+                    <p class="card-text">Cần thơ</p>
+                    <p class="card-text">$199.99</p>
+                    <p class="card-text"><small class="text-muted">★★★★☆</small></p>
+                    <a href="#" class="btn btn-primary">Book Now</a>
                 </div>
             </div>
+
             <!-- 5 -->
-            <div class=" col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4">
-                <div class="card" data-searchable>
-                    <img src="https://picsum.photos/200" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">5-Day Oahu Tour: Honolulu, Pearl Harbor, & Diamond Head</h5>
-                        <p class="card-text">Oahu, Hawaii</p>
-                        <p class="card-text">$199.99</p>
-                        <p class="card-text"><small class="text-muted">★★★★☆</small></p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
-                    </div>
+
+            <div class="card col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4" data-searchable>
+                <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">5-Day Oahu Tour: Honolulu, Pearl Harbor, & Diamond Head</h5>
+                    <p class="card-text">Oahu, Hawaii</p>
+                    <p class="card-text">$199.99</p>
+                    <p class="card-text"><small class="text-muted">★★★★☆</small></p>
+                    <a href="#" class="btn btn-primary">Book Now</a>
                 </div>
             </div>
+
             <!-- 6 -->
-            <div class=" col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4">
-                <div class="card" data-searchable>
-                    <img src="https://picsum.photos/200" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Molokini and Turtle Arches Snorkeling Trip</h5>
-                        <p class="card-text">Molokini, Hawaii</p>
-                        <p class="card-text">$299.99</p>
-                        <p class="card-text"><small class="text-muted">★★★★★</small></p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
-                    </div>
+            <div class="card col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4" data-searchable>
+                <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Molokini and Turtle Arches Snorkeling Trip</h5>
+                    <p class="card-text">Molokini, Hawaii</p>
+                    <p class="card-text">$299.99</p>
+                    <p class="card-text"><small class="text-muted">★★★★★</small></p>
+                    <a href="#" class="btn btn-primary">Book Now</a>
                 </div>
             </div>
             <!-- 7 -->
-            <div class=" col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4">
-                <div class="card" data-searchable>
-                    <img src="https://picsum.photos/200" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">5-Day Oahu Tour: Honolulu, Pearl Harbor, & Diamond Head</h5>
-                        <p class="card-text">Oahu, Hawaii</p>
-                        <p class="card-text">$199.99</p>
-                        <p class="card-text"><small class="text-muted">★★★★☆</small></p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
-                    </div>
+            <div class="card col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4" data-searchable>
+                <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">5-Day Oahu Tour: Honolulu, Pearl Harbor, & Diamond Head</h5>
+                    <p class="card-text">Oahu, Hawaii</p>
+                    <p class="card-text">$199.99</p>
+                    <p class="card-text"><small class="text-muted">★★★★☆</small></p>
+                    <a href="#" class="btn btn-primary">Book Now</a>
                 </div>
             </div>
             <!-- 8 -->
-            <div class=" col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4">
-                <div class="card" data-searchable>
-                    <img src="https://picsum.photos/200" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">5-Day Oahu Tour: Honolulu, Pearl Harbor, & Diamond Head</h5>
-                        <p class="card-text">Oahu, Hawaii</p>
-                        <p class="card-text">$199.99</p>
-                        <p class="card-text"><small class="text-muted">★★★★☆</small></p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
-                    </div>
+            <div class="card col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4" data-searchable>
+                <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">5-Day Oahu Tour: Honolulu, Pearl Harbor, & Diamond Head</h5>
+                    <p class="card-text">Oahu, Hawaii</p>
+                    <p class="card-text">$199.99</p>
+                    <p class="card-text"><small class="text-muted">★★★★☆</small></p>
+                    <a href="#" class="btn btn-primary">Book Now</a>
                 </div>
             </div>
             <!-- 9 -->
-            <div class=" col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4">
-                <div class="card" data-searchable>
-                    <img src="https://picsum.photos/200" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Molokini and Turtle Arches Snorkeling Trip</h5>
-                        <p class="card-text">Molokini, Hawaii</p>
-                        <p class="card-text">$299.99</p>
-                        <p class="card-text"><small class="text-muted">★★★★★</small></p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
-                    </div>
+            <div class="card col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4" data-searchable>
+                <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Molokini and Turtle Arches Snorkeling Trip</h5>
+                    <p class="card-text">Molokini, Hawaii</p>
+                    <p class="card-text">$299.99</p>
+                    <p class="card-text"><small class="text-muted">★★★★★</small></p>
+                    <a href="#" class="btn btn-primary">Book Now</a>
                 </div>
             </div>
             <!-- 10 -->
-            <div class=" col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4">
-                <div class="card" data-searchable>
-                    <img src="https://picsum.photos/200" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">5-Day Oahu Tour: Honolulu, Pearl Harbor, & Diamond Head</h5>
-                        <p class="card-text">Oahu, Hawaii</p>
-                        <p class="card-text">$199.99</p>
-                        <p class="card-text"><small class="text-muted">★★★★☆</small></p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
-                    </div>
+            <div class="card col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4" data-searchable>
+                <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">5-Day Oahu Tour: Honolulu, Pearl Harbor, & Diamond Head</h5>
+                    <p class="card-text">Oahu, Hawaii</p>
+                    <p class="card-text">$199.99</p>
+                    <p class="card-text"><small class="text-muted">★★★★☆</small></p>
+                    <a href="#" class="btn btn-primary">Book Now</a>
                 </div>
             </div>
             <!-- 11 -->
-            <div class=" col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4">
-                <div class="card" data-searchable>
-                    <img src="https://picsum.photos/200" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">5-Day Oahu Tour: Honolulu, Pearl Harbor, & Diamond Head</h5>
-                        <p class="card-text">Oahu, Hawaii</p>
-                        <p class="card-text">$199.99</p>
-                        <p class="card-text"><small class="text-muted">★★★★☆</small></p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
-                    </div>
+
+            <div class="card col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4" data-searchable>
+                <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">5-Day Oahu Tour: Honolulu, Pearl Harbor, & Diamond Head</h5>
+                    <p class="card-text">Oahu, Hawaii</p>
+                    <p class="card-text">$199.99</p>
+                    <p class="card-text"><small class="text-muted">★★★★☆</small></p>
+                    <a href="#" class="btn btn-primary">Book Now</a>
                 </div>
             </div>
             <!-- 12 -->
-            <div class=" col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4">
-                <div class="card" data-searchable>
-                    <img src="https://picsum.photos/200" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Molokini and Turtle Arches Snorkeling Trip</h5>
-                        <p class="card-text">Molokini, Hawaii</p>
-                        <p class="card-text">$299.99</p>
-                        <p class="card-text"><small class="text-muted">★★★★★</small></p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
-                    </div>
+
+            <div class="card col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4" data-searchable>
+                <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Molokini and Turtle Arches Snorkeling Trip</h5>
+                    <p class="card-text">Molokini, Hawaii</p>
+                    <p class="card-text">$299.99</p>
+                    <p class="card-text"><small class="text-muted">★★★★★</small></p>
+                    <a href="#" class="btn btn-primary">Book Now</a>
                 </div>
             </div>
+
             <!-- 13 -->
-            <div class=" col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4">
-                <div class="card" data-searchable>
-                    <img src="https://picsum.photos/200" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">5-Day Oahu Tour: Honolulu, Pearl Harbor, & Diamond Head</h5>
-                        <p class="card-text">Oahu, Hawaii</p>
-                        <p class="card-text">$199.99</p>
-                        <p class="card-text"><small class="text-muted">★★★★☆</small></p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
-                    </div>
+
+            <div class="card col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4" data-searchable>
+                <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">5-Day Oahu Tour: Honolulu, Pearl Harbor, & Diamond Head</h5>
+                    <p class="card-text">Oahu, Hawaii</p>
+                    <p class="card-text">$199.99</p>
+                    <p class="card-text"><small class="text-muted">★★★★☆</small></p>
+                    <a href="#" class="btn btn-primary">Book Now</a>
                 </div>
             </div>
+
             <!-- 14 -->
-            <div class=" col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4">
-                <div class="card" data-searchable>
-                    <img src="https://picsum.photos/200" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">5-Day Oahu Tour: Honolulu, Pearl Harbor, & Diamond Head</h5>
-                        <p class="card-text">Oahu, Hawaii</p>
-                        <p class="card-text">$199.99</p>
-                        <p class="card-text"><small class="text-muted">★★★★☆</small></p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
-                    </div>
+
+            <div class="card col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4" data-searchable>
+                <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">5-Day Oahu Tour: Honolulu, Pearl Harbor, & Diamond Head</h5>
+                    <p class="card-text">Oahu, Hawaii</p>
+                    <p class="card-text">$199.99</p>
+                    <p class="card-text"><small class="text-muted">★★★★☆</small></p>
+                    <a href="#" class="btn btn-primary">Book Now</a>
                 </div>
             </div>
+
             <!-- 15 -->
-            <div class=" col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4">
-                <div class="card" data-searchable>
-                    <img src="https://picsum.photos/200" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Molokini and Turtle Arches Snorkeling Trip</h5>
-                        <p class="card-text">Molokini, Hawaii</p>
-                        <p class="card-text">$299.99</p>
-                        <p class="card-text"><small class="text-muted">★★★★★</small></p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
-                    </div>
+
+            <div class="card col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4" data-searchable>
+                <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Molokini and Turtle Arches Snorkeling Trip</h5>
+                    <p class="card-text">Molokini, Hawaii</p>
+                    <p class="card-text">$299.99</p>
+                    <p class="card-text"><small class="text-muted">★★★★★</small></p>
+                    <a href="#" class="btn btn-primary">Book Now</a>
                 </div>
             </div>
+
             <!-- 16 -->
-            <div class=" col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4">
-                <div class="card" data-searchable>
-                    <img src="https://picsum.photos/200" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">5-Day Oahu Tour: Honolulu, Pearl Harbor, & Diamond Head</h5>
-                        <p class="card-text">Oahu, Hawaii</p>
-                        <p class="card-text">$199.99</p>
-                        <p class="card-text"><small class="text-muted">★★★★☆</small></p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
-                    </div>
+
+            <div class="card col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4" data-searchable>
+                <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">5-Day Oahu Tour: Honolulu, Pearl Harbor, & Diamond Head</h5>
+                    <p class="card-text">Oahu, Hawaii</p>
+                    <p class="card-text">$199.99</p>
+                    <p class="card-text"><small class="text-muted">★★★★☆</small></p>
+                    <a href="#" class="btn btn-primary">Book Now</a>
                 </div>
             </div>
+
             <!-- 17 -->
-            <div class=" col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4">
-                <div class="card" data-searchable>
-                    <img src="https://picsum.photos/200" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">5-Day Oahu Tour: Honolulu, Pearl Harbor, & Diamond Head</h5>
-                        <p class="card-text">Oahu, Hawaii</p>
-                        <p class="card-text">$199.99</p>
-                        <p class="card-text"><small class="text-muted">★★★★☆</small></p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
-                    </div>
+
+            <div class="card col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4" data-searchable>
+                <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">5-Day Oahu Tour: Honolulu, Pearl Harbor, & Diamond Head</h5>
+                    <p class="card-text">Oahu, Hawaii</p>
+                    <p class="card-text">$199.99</p>
+                    <p class="card-text"><small class="text-muted">★★★★☆</small></p>
+                    <a href="#" class="btn btn-primary">Book Now</a>
                 </div>
             </div>
+
             <!-- 18 -->
-            <div class=" col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4">
-                <div class="card" data-searchable>
-                    <img src="https://picsum.photos/200" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Molokini and Turtle Arches Snorkeling Trip</h5>
-                        <p class="card-text">Molokini, Hawaii</p>
-                        <p class="card-text">$299.99</p>
-                        <p class="card-text"><small class="text-muted">★★★★★</small></p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
-                    </div>
+
+            <div class="card col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4" data-searchable>
+                <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Molokini and Turtle Arches Snorkeling Trip</h5>
+                    <p class="card-text">Molokini, Hawaii</p>
+                    <p class="card-text">$299.99</p>
+                    <p class="card-text"><small class="text-muted">★★★★★</small></p>
+                    <a href="#" class="btn btn-primary">Book Now</a>
                 </div>
             </div>
+
         </div>
     </div>
     <!-- tour -->
