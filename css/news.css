@@ -1,29 +1,30 @@
 .navbar {
-    position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 10px;
-    z-index: 1000;
-    font-family: "Poppins Regular", sans-serif;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  z-index: 1000;
+  font-family: "Poppins Regular", sans-serif;
 }
 
 .navbar-brand img {
-    height: 32px;
+  height: 32px;
 }
 
 .navbar-brand {
-    font-family: "Poppins ExtraBold", sans-serif;
+  font-family: "Poppins ExtraBold", sans-serif;
 }
 
 .nav-link:hover {
-    background-color: #0d6efd;
+  background-color: #0d6efd;
+  color: white !important;
 }
 
-.item-new>.text-black:hover {
-    font-size: 1.1em;
+.item-new > .text-black:hover {
+  font-size: 1.1em;
 }
 
 .dropdown-menu form {
-    min-width: 400px;
+  min-width: 400px;
 }
