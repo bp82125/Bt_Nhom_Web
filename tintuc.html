@@ -1,96 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Tripster</title>
 
     <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <!-- Bootstrap CSS -->
 
     <!-- Local CSS -->
     <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/main.css" />
+    <!-- <link rel="stylesheet" href="/css/main.css" /> -->
     <link rel="stylesheet" href="css/news.css" />
     <!-- Local CSS -->
 
     <!-- Bootstrap JS -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <!-- Bootstrap JS -->
 
     <!-- Font Awesome Icon  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <!-- Font Awesome Icon  -->
 
     <!-- Jquery -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Jquery -->
 
     <!-- Popper JS -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"
-      integrity="sha512-TPh2Oxlg1zp+kz3nFA0C5vVC6leG/6mm1z9+mA81MI5eaUVqasPLO8Cuk4gMF4gUfP5etR73rgU/8PNMsSesoQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js" integrity="sha512-TPh2Oxlg1zp+kz3nFA0C5vVC6leG/6mm1z9+mA81MI5eaUVqasPLO8Cuk4gMF4gUfP5etR73rgU/8PNMsSesoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Popper JS -->
+</head>
 
-    <!-- <script src="/js/script.js"></script> -->
-  </head>
-
-  <body>
+<body>
     <!-- Navbar -->
     <header>
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand text-black p-3" href="index.html"
-            ><img
-              src="/assets/img/homepage/logo.png"
-              alt=""
-              class="img-fluid me-2"
-            />Tripster</a
-          >
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand text-black p-3" href="index.html"><img src="/assets/img/homepage/logo.png" alt="" class="img-fluid me-2" />Tripster</a>
 
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto my-lg-0 me-sm-0 my-sm-0">
-              <li class="nav-item px-2">
-                <a
-                  class="nav-link text-black fs-5 rounded-pill px-3 my-2"
-                  aria-current="page"
-                  href="index.html"
-                  >Trang Chủ</a
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto my-lg-0 me-sm-0 my-sm-0">
+                        <li class="nav-item px-2">
+                            <a class="nav-link text-black fs-5 rounded-pill px-3 my-2" aria-current="page" href="index.html">Trang Chủ</a
                 >
               </li>
               <li class="nav-item px-2">
@@ -140,342 +97,386 @@
                 >
                   <i class="fa-solid fa-magnifying-glass"></i>
                 </a>
-                <div class="dropdown-menu dropdown-menu-end">
-                  <form class="d-md-inline-flex px-2" role="search">
-                    <input
-                      class="form-control me-2"
-                      type="search"
-                      placeholder="Tìm kiếm địa điểm, tour,..."
-                      aria-label="Search"
-                    />
-                    <button
-                      class="btn btn-outline-primary"
-                      style="white-space: nowrap"
-                      type="submit"
-                    >
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <form class="d-md-inline-flex px-2" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Tìm kiếm địa điểm, tour,..." aria-label="Search" />
+                                    <button class="btn btn-outline-primary" style="white-space: nowrap" type="submit">
                       Tìm kiếm
                     </button>
-                  </form>
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+            </div>
+        </nav>
     </header>
 
     <!-- Navbar -->
 
     <!-- news Travel -->
     <main>
-      <div class="newstravel">
+        <!-- title -->
         <div class="container">
-          <h3 class="text-center">Tin tức Mới Nhất</h3>
-          <h6>
-            Tin tức Du lịch - Tin tức Du lịch 2023 cung cấp các thông tin về Du
-            lịch Việt Nam, các Sự kiện Du lịch diễn ra trong ngày. Thông qua các
-            bài viết được cập nhật liên tục, quý khách có thể nắm bắt thêm được
-            nhiều thông tin hữu ích về du lịch.
-          </h6>
-          <div class="row mt-3">
-            <!-- 1 -->
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4">
-              <img
-                src="assets/img/news/da-lat.jpg"
-                alt="Image 1"
-                class="img-fluid mb-2 img-new"
-              />
-              <a href="#" class="text-decoration-none text-black text-hieg"
-                >Trọn bộ cẩm nang & kinh nghiệm du lịch Đà Lạt<br
-              /></a>
-              <div class="be mt-2 mb-2">
-                <span class="fa-solid fa-calendar-days"> 29/10/2023</span>
-              </div>
-              <p>
-                Du lịch Đà Lạt là hành trình trải nghiệm hấp dẫn, khi bạn có thể
-                tận hưởng bầu không khí trong lành, mát mẻ, thưởng ngoạn khung
-                cảnh thiên nhiên tươi đẹp và thỏa sức khám phá nhiều món ngon
-                đặc sản.
-              </p>
+            <h1 class="text-center mt-4">TIN TỨC MỚI NHẤT</h1>
+            <br>
+        </div>
+        <!-- title -->
+        <!-- list news -->
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-6 col-sm-6 col-md-6 col-lg-3 ">
+                    <img src="assets/img/news/BaoTangCaPhe.jpeg" class=" img-list" alt="...">
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-9">
+                    <a href="#" class="text-decoration-none link-list">
+                        <h5 class=" text-black">Bảo tàng Thế giới Cà phê ở Đắk Lắk đón du khách thứ 5 triệu</h5>
+                    </a>
+                    <p>Đắk Lắk - Trong 5 năm qua, Bảo tàng Thế giới Cà phê ở TP.Buôn Ma Thuột, tỉnh Đắk Lắk đã đón 5 triệu lượt khách tham quan, trải nghiệm và thưởng thức cà phê.</p>
+                </div>
             </div>
-            <!-- 2 -->
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4">
-              <img
-                src="assets/img/news/Da-nang.jpg"
-                alt="Image 2"
-                class="img-fluid mb-2 img-new"
-              />
-              <a href="#" class="text-decoration-none text-black"
-                >Thiên đường ẩm thực Đà Nẵng cuốn hút khách du lịch bốn
-                phương</a
-              >
-              <div class="be mt-2 mb-2">
-                <span class="fa-solid fa-calendar-days"> 20/10/2023</span>
-              </div>
-              <p>
-                Nền ẩm thực Đà Nẵng mang trong mình nét đặc trưng của mảnh đất
-                miền Trung. Không chỉ nổi tiếng với cảnh quan thiên nhiên tươi
-                đẹp, những bờ cát trắng trải dài mà văn hóa ẩm thực Đà Nẵng còn
-                là một trong những lý do khiến du khách thập phương siêu lòng.
-              </p>
+            <div class="row mb-3">
+                <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                    <img src="assets/img/news/Le-Hoi-Anh-Sang-Min.jpg" class=" img-list" alt="...">
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-9">
+                    <a href="#" class="text-decoration-none link-list">
+                        <h5 class=" text-black">Việt Nam đăng cai Lễ hội vịnh ánh sáng quốc tế Nha Trang năm 2024</h5>
+                    </a>
+                    <p>Khánh Hòa - Lễ hội vịnh ánh sáng quốc tế Nha Trang dự kiến diễn ra vào tháng 7.2024 với 4 quốc gia tham dự.</p>
+                </div>
             </div>
+            <div class="row mb-3">
+                <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                    <img src="assets/img/news/Cung-Duong-DL-3.jpg" class=" img-list" alt="...">
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-9">
+                    <a href="#" class="text-decoration-none link-list">
+                        <h5 class=" text-black">Đắm chìm trong cung đường nghệ thuật ở Đà Lạt</h5>
+                    </a>
+                    <p>Lâm Đồng - TP Đà Lạt khai mạc “Cung đường nghệ thuật Đà Lạt” chào mừng kỷ niệm 130 năm Đà Lạt hình thành và phát triển.</p>
+                </div>
+            </div>
+        </div>
+        <!-- list news -->
+
+
+        <div class="newstravel">
+            <div class="container">
+                <h2 class="text-center mt-5">Tin Tức Tổng Hợp</h2>
+                <h5 class="mt-3 mb-3">
+                    Tin tức Du lịch TRIPSTER 2023 cung cấp các thông tin về Du lịch Việt Nam, các Sự kiện Du lịch nổi bật gần đây. Thông qua các bài viết được cập nhật liên tục, quý khách có thể nắm bắt thêm được nhiều thông tin hữu ích về du lịch.
+                </h5>
+                <div class="row mt-3">
+                    <!-- 1 -->
+                    <div class="card col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-3 p-2">
+                        <img src="assets/img/news/da-lat.jpg" alt="Image 1" class="  mb-2 img-new rounded" />
+                        <div class="card-body">
+                            <a href="#" class="card-title text-decoration-none text-black">Trọn bộ cẩm nang & kinh nghiệm du lịch Đà Lạt</a>
+                            <p class="card-text ">
+                                <i class="fa-solid fa-calendar-days"></i> 29/10/2023</p>
+                            <p class="card-text">
+                                Du lịch Đà Lạt là hành trình trải nghiệm hấp dẫn, khi bạn có thể tận hưởng bầu không khí trong lành, mát mẻ, thưởng ngoạn khung cảnh thiên nhiên tươi đẹp và thỏa sức khám phá nhiều món ngon đặc sản.
+                            </p>
+                        </div>
+
+                    </div>
+                    <!-- 2 -->
+                    <div class="card col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-3 p-2">
+                        <img src="assets/img/news/Da-nang.jpg" alt="Image 2" class="  mb-2 img-new rounded" />
+                        <div class="card-body">
+                            <a href="#" class="card-title text-decoration-none text-black">Thiên đường ẩm thực Đà Nẵng cuốn hút khách du lịch bốn
+                            phương</a
+                          >
+                          <p class="card-text "><i class="fa-solid fa-calendar-days"></i> 20/10/2023</p>
+                          <p class="card-text">
+                            Nền ẩm thực Đà Nẵng mang trong mình nét đặc trưng của mảnh đất miền Trung. Không chỉ nổi tiếng với cảnh quan thiên nhiên tươi đẹp, những bờ cát trắng trải dài mà văn hóa ẩm thực Đà Nẵng còn là một trong những lý do khiến du khách thập phương siêu lòng.
+                          </p>
+                        </div>
+                    </div>
             <!-- 3 -->
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4">
-              <img
-                src="assets/img/news/Trang_An.jpg "
-                alt="Image 3"
-                class="img-fluid mb-2 img-new"
-              />
-              <a href="# " class="text-decoration-none text-black">
+            <div class="card col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-3 p-2">
+              <img src="assets/img/news/Trang_An.jpg " alt="Image 3" class="  mb-2 img-new rounded" />
+              <div class="card-body">
+              <a href="# " class="card-title text-decoration-none text-black">
                 Khám phá khu du lịch Tràng An - tiên cảnh chốn nhân gian</a
               >
-              <div class="be mt-2 mb-2">
-                <span class="fa-solid fa-calendar-days"> 29/08/2023</span>
-              </div>
-              <p>
+              <p class="card-text">
+                <i class="fa-solid fa-calendar-days"></i> 29/08/2023
+              </p>
+              <p class="card-text">
                 Khu du lịch Tràng An (tỉnh Ninh Bình) có lẽ vì thế mà nơi đây
                 được đông đảo du khách miền Bắc chọn làm điểm du lịch sinh thái
                 mỗi dịp nghỉ hè, nghỉ lễ hay cuối tuần. Cùng khám phá xem nơi
                 đây có đúng là “tiên cảnh chốn nhân gian” như du khách vẫn
                 thường nhắc đến không nhé!
               </p>
+              </div>
             </div>
             <!-- 4 -->
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4">
-              <img
-                src="assets/img/news/vinh-ha-long.jpg "
-                alt="Image 4"
-                class="img-fluid mb-2 img-new"
-              />
-              <a href="#" class="text-decoration-none text-black"
+            <div class=" card col-sm-12 col-md-6 col-lg-4 item-new mb-3 p-2">
+              <img src="assets/img/news/vinh-ha-long.jpg " alt="Image 4" class="  mb-2 img-new rounded" />
+              <div class="card-body">
+              <a href="#" class="card-title text-decoration-none text-black "
                 >Đến vịnh Hạ Long và lý giải sức hút của Di sản Thiên nhiên Thế
                 giới</a
               >
-              <div class="be mt-2 mb-2">
-                <span class="fa-solid fa-calendar-days"> 28/10/2023</span>
-              </div>
-              <p>
+              <p class="card-text">
+                <i class="fa-solid fa-calendar-days"> </i> 28/10/2023
+              </p>
+              <p class="card-text">
                 TP Hạ Long thuộc tỉnh Quảng Ninh là một điểm du lịch nổi tiếng
                 không chỉ toàn quốc mà trên khắp thế giới. Hạ Long có vịnh biển,
                 có các di sản thế giới, các hoạt động du lịch phong phú, đồ ăn
                 ngon...
               </p>
+              </div>
             </div>
             <!-- 5 -->
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4">
+            <div class="card col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-3 p-2">
               <img
                 src="assets/img/news/ben-ninh-kieu-can-tho.jpg"
                 alt="Image 5"
-                class="img-fluid mb-2 img-new"
+                class="mb-2 img-new rounded"
               />
-              <a href="#" class="text-decoration-none text-black"
+              <div class="card-body">
+                <a href="#" class="card-title text-decoration-none text-black"
                 >Bến Ninh Kiều Cần Thơ - Ngắm vẻ đẹp của "Tây Đô" về đêm</a
               >
-              <div class="be mt-2 mb-2">
-                <span class="fa-solid fa-calendar-days"> 19/10/2023</span>
-              </div>
-              <p>
+              <p class="card-text">
+                <i class="fa-solid fa-calendar-days"></i> 19/10/2023
+              </p>
+              <p class="card-text">
                 Du lịch Cần Thơ mà bỏ qua địa danh Bến Ninh Kiều quả là một
                 thiếu sót. Nơi đây được xem là một biểu tượng du lịch, địa điểm
                 vui chơi lý tưởng tại Cần Thơ. Đến Bến Ninh Kiều,...
               </p>
+              </div>
+              
             </div>
             <!-- 6 -->
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4">
+            <div class=" card col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-3 p-2">
               <img
                 src="assets/img/news/hanh-trinh-viet-nam.jpg"
                 alt="Image 6"
-                class="img-fluid mb-2 img-new"
+                class="  mb-2 img-new rounded"
               />
-              <a href="#" class="text-decoration-none text-black"
+              <div class="card-body">
+                <a href="#" class="card-title text-decoration-none text-black"
                 >Những địa điểm du lịch nổi tiếng ở Việt Nam</a
               >
-              <div class="be mt-2 mb-2">
-                <span class="fa-solid fa-calendar-days"> 29/08/2023</span>
-              </div>
-              <p>
+              <p class="card-text">
+                <i class="fa-solid fa-calendar-days"></i> 29/08/2023
+              </p>
+              <p class="card-text">
                 Việt Nam có vô vàn điểm du lịch hấp dẫn. Du lịch miền Bắc, du
                 lịch miền Trung, hay du lịch miền Nam, bạn sẽ được chiêm ngưỡng
                 cảnh núi non hùng vĩ, những bãi biển tuyệt sắc, những thành phố
                 sầm uất, hay miền sông nước nên thơ, hữu tình,...
               </p>
+              </div>
+              
             </div>
             <!-- 7 -->
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4">
+            <div class="card col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-3 p-2">
               <img
                 src="assets/img/news/hatien.jpg"
                 alt="Image 7"
-                class="img-fluid mb-2 img-new"
+                class="  mb-2 img-new rounded"
               />
-              <a href="#" class="text-decoration-none text-black"
+              <div class="card-body">
+                <a href="#" class="card-title text-decoration-none text-black"
                 >Khám phá 12 địa điểm du lịch ở Hà Tiên Kiên Giang</a
               >
-              <div class="be mt-2 mb-2">
-                <span class="fa-solid fa-calendar-days"> 23/10/2023</span>
-              </div>
-              <p>
+              <p class="card-text">
+                <i class="fa-solid fa-calendar-days"></i> 23/10/2023
+              </p>
+              <p class="card-text">
                 Hà Tiên nằm ở phía Tây Bắc tỉnh Kiên Giang, là một trong những
                 địa điểm du lịch nổi tiếng. Hà Tiên rất hấp dẫn du khách khi
                 khoác lên mình một vẻ đẹp nên thơ, hữu tình với nhiều thắng cảnh
                 thiên nhiên , bởi thế mà thi sĩ Mạc Thiên Tử đã dành tặng lời ca
                 ngợi Hà Tiên qua bài thơ “Hà Tiên Thập vịnh”
               </p>
+              </div>
+              
             </div>
             <!-- 8 -->
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4">
+            <div class="card col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-3 p-2">
               <img
                 src="assets/img/news/hoian.jpg"
                 alt="Image 8"
-                class="img-fluid mb-2 img-new"
+                class="  mb-2 img-new rounded"
               />
-              <a href="#" class="text-decoration-none text-black"
+              <div class="card-body">
+                <a href="#" class="card-title text-decoration-none text-black"
                 >Hội An - Địa điểm du lịch hút khách bậc nhất Việt Nam</a
               >
-              <div class="be mt-2 mb-2">
-                <span class="fa-solid fa-calendar-days"> 29/10/2023</span>
-              </div>
-              <p>
+              <p class="card-text">
+                <i class="fa-solid fa-calendar-days"></i> 29/10/2023
+              </p>
+              <p class="card-text">
                 Hội An là một trong những điểm đến hàng đầu của miền Trung với
                 nhiều thắng cảnh đẹp cùng nền ẩm thực độc đáo. Du lịch Hội An,
                 du khách có dịp chiêm ngưỡng những di sản kiến trúc độc đáo có
                 từ hàng trăm năm trước như các ngôi nhà cổ, bảo tàng, chùa
                 chiền,...
               </p>
+              </div>
+              
             </div>
             <!-- 9 -->
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4">
+            <div class="card col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-3 p-2">
               <img
                 src="assets/img/news/hue.jpg"
                 alt="Image 9"
-                class="img-fluid mb-2 img-new"
+                class="  mb-2 img-new rounded"
               />
-              <a href="#" class="text-decoration-none text-black"
+              <div class="card-body">
+                <a href="#" class="card-title text-decoration-none text-black"
                 >17 Địa điểm du lịch Huế hấp dẫn về mảnh đất cố đô cũ</a
               >
-              <div class="be mt-2 mb-2">
-                <span class="fa-solid fa-calendar-days"> 29/10/2023</span>
-              </div>
-              <p>
+              <p class="card-text">
+                <i class="fa-solid fa-calendar-days"></i> 29/10/2023
+              </p>
+              <p class="card-text">
                 Nhắc đến xứ Huế là ta lại liên tưởng đến nhiều công trình kiến
                 trúc cổ cùng những cảnh sắc thiên nhiên mang nét thơ mộng, hữu
                 tình trong không gian thư thái, tĩnh lặng của vùng đất cố đô cũ.
                 Còn chờ đợi gì mà không ghi lại ngay một loạt những địa điểm du
                 lịch hấp dẫn ở Huế và lên đường thôi!
               </p>
+              </div>
+              
             </div>
             <!-- 10 -->
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4">
-              <img
-                src="assets/img/news/muicamau.jpg"
-                alt="Image 10"
-                class="img-fluid mb-2 img-new"
-              />
-              <a href="#" class="text-decoration-none text-black"
-                >Đất Mũi Cà Mau - Trọn vẹn cẩm nang cho kỳ du lịch
-              </a>
-              <div class="be mt-2 mb-2">
-                <span class="fa-solid fa-calendar-days"> 29/10/2023</span>
-              </div>
-              <p>
-                Những năm gần đây, Đất Mũi Cà Mau bổng dưng trở thành điểm du
-                lịch thu hút rất nhiều du khách. Chặng hành trình phượt về miền
-                Tây sông nước đòi hỏi người đi cần phải trang bị cho mình một số
-                kiến thức nhất định.
-              </p>
+            <div class="card col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-3 p-2">
+              <img src="assets/img/news/muicamau.jpg" alt="Image 10" class="  mb-2 img-new rounded" />
+              <div class="card-body">
+                <a href="#" class="card-title text-decoration-none text-black">Đất Mũi Cà Mau - Trọn vẹn cẩm nang cho kỳ du lịch</a>
+                            <p class="card-text"><i class="fa-solid fa-calendar-days"></i> 29/10/2023</p>
+                            <p class="card-text">
+                                Những năm gần đây, Đất Mũi Cà Mau bổng dưng trở thành điểm du lịch thu hút rất nhiều du khách. Chặng hành trình phượt về miền Tây sông nước đòi hỏi người đi cần phải trang bị cho mình một số kiến thức nhất định.
+                            </p>
+                        </div>
+
+                    </div>
+                    <!-- 11 -->
+                    <div class="card col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-3 p-2">
+                        <img src="assets/img/news/nhatrang.jpg" alt="Image 11" class="  mb-2 img-new rounded" />
+                        <div class="card-body">
+                            <a href="#" class="card-title text-decoration-none text-black">16 địa điểm du lịch Nha Trang đẹp & hấp dẫn bậc nhất</a>
+                            <p class="card-text"><i class="fa-solid fa-calendar-days"></i> 29/10/2023</p>
+                            <p class="card-text">
+                                Thành phố Nha Trang đẹp như một bức tuyệt tác của tự nhiên và con người với nhiều địa điểm du lịch Nha Trang nổi tiếng. Cảnh quan thiên nhiên đa dạng đã làm nên sức hút khó cưỡng của những hoạt động du lịch...
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 12 -->
+                    <div class="card col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-3 p-2">
+                        <img src="assets/img/news/vungtau.jpg" alt="Image 12" class="  mb-2 img-new rounded" />
+                        <div class="card-body">
+                            <a href="#" class="card-title text-decoration-none text-black">Du lịch Vũng Tàu: 15 địa điểm vui chơi, check in cực đẹp</a>
+                            <p class="card-text"><i class="fa-solid fa-calendar-days"></i> 09/09/2023</p>
+                            <p class="card-text">
+                                Khám phá du lịch Vũng Tàu tươi đẹp mỗi dịp cuối tuần thật tuyệt vời phải không các bạn, đối với những bạn mới lần đầu xuống Vũng Tàu thì đừng bỏ qua những địa điểm du lịch đẹp nhất sau đây nhé.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-            <!-- 11 -->
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4">
-              <img
-                src="assets/img/news/nhatrang.jpg"
-                alt="Image 11"
-                class="img-fluid mb-2 img-new"
-              />
-              <a href="#" class="text-decoration-none text-black"
-                >16 địa điểm du lịch Nha Trang đẹp & hấp dẫn bậc nhất</a
-              >
-              <div class="be mt-2 mb-2">
-                <span class="fa-solid fa-calendar-days"> 29/10/2023</span>
-              </div>
-              <p>
-                Thành phố Nha Trang đẹp như một bức tuyệt tác của tự nhiên và
-                con người với nhiều địa điểm du lịch Nha Trang nổi tiếng. Cảnh
-                quan thiên nhiên đa dạng đã làm nên sức hút khó cưỡng của những
-                hoạt động du lịch...
-              </p>
-            </div>
-            <!-- 12 -->
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 item-new mb-4">
-              <img
-                src="assets/img/news/vungtau.jpg"
-                alt="Image 12"
-                class="img-fluid mb-2 img-new"
-              />
-              <a href="#" class="text-decoration-none text-black"
-                >Du lịch Vũng Tàu: 15 địa điểm vui chơi, check in cực đẹp</a
-              >
-              <div class="be mt-2 mb-2">
-                <span class="fa-solid fa-calendar-days"> 09/09/2023</span>
-              </div>
-              <p>
-                Khám phá du lịch Vũng Tàu tươi đẹp mỗi dịp cuối tuần thật tuyệt
-                vời phải không các bạn, đối với những bạn mới lần đầu xuống Vũng
-                Tàu thì đừng bỏ qua những địa điểm du lịch đẹp nhất sau đây nhé.
-              </p>
-            </div>
-          </div>
         </div>
-      </div>
     </main>
     <!-- news Travel -->
 
-    <div class="footer-dark">
-      <footer>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3 item text">
-              <h3>Tripster.com</h3>
-              <p>
-                Không có giới hạn trong việc khám phá thế giới. Chúng tôi là
-                người bạn đồng hành đáng tin cậy trên mỗi hành trình của bạn.
-              </p>
-            </div>
-
-            <div class="col-md-3 item">
-              <h3>Du lịch</h3>
-              <ul>
-                <li><a href="# ">Miền Bắc</a></li>
-                <li><a href="# ">Miền Trung</a></li>
-                <li><a href="# ">Miền nam</a></li>
-              </ul>
-            </div>
-            <div class="col-md-3 item">
-              <h3>Hỗ trợ</h3>
-              <ul>
-                <li><a href="# ">Đăng ký dịch vụ</a></li>
-                <li><a href="# ">Email cho chúng tôi</a></li>
-                <li><a href="# ">Diễn đàn</a></li>
-              </ul>
-            </div>
-            <div class="col-md-3 item">
-              <h3>Tìm hiểu thêm</h3>
-              <ul>
-                <li><a href="# ">Tripster.com</a></li>
-                <li><a href="# ">Dịch vụ tư vấn</a></li>
-                <li><a href="# ">Điều khoản dịch vụ</a></li>
-              </ul>
-            </div>
-
-            <div class="col item social">
-              <a href="# "><i class="fa-brands fa-facebook"></i></a>
-              <a href="# "><i class="fa-brands fa-twitter"></i></a>
-              <a href="# "><i class="fa-brands fa-youtube"></i></a>
-              <a href="# "><i class="fa-brands fa-instagram"></i></a>
-              <a href="# "><i class="fa-brands fa-google"></i></a>
-            </div>
-          </div>
-          <p class="copyright">Bản quyền thuộc về Tripster.com &copy; 2023</p>
+    <footer>
+        <div class="container-fluid">
+            <div class="row p-5 d-flex justify-content-center text-xxl-start text-center">
+                <div class="col-xxl-3 col-12 mx-5 mt-5">
+                    <h2>Tripster.com</h2>
+                    <p class="mt-5">
+                        Không có giới hạn trong việc khám phá thế giới. Chúng tôi là người bạn đồng hành đáng tin cậy trên mỗi hành trình của bạn.
+                    </p>
+                </div>
+                <div class="col-xxl-auto col-12 mx-5 mt-5 text-xxl-start text-center">
+                    <h2>Du lịch</h2>
+                    <ul class="mt-5">
+                        <li class="my-2">
+                            <a href="#" class="link-offset-2 link-underline-opacity-0">Miền Bắc</a
+              >
+            </li>
+            <li class="my-2">
+              <a href="#" class="link-offset-2 link-underline-opacity-0"
+                >Miền Trung</a
+              >
+            </li>
+            <li class="my-2">
+              <a href="#" class="link-offset-2 link-underline-opacity-0"
+                >Miền nam</a
+              >
+            </li>
+          </ul>
         </div>
-      </footer>
-    </div>
-  </body>
+        <div class="col-xxl-auto col-12 mx-5 mt-5 text-xxl-start text-center">
+          <h2>Hỗ trợ</h2>
+          <ul class="mt-5">
+            <li class="my-2">
+              <a href="#" class="link-offset-2 link-underline-opacity-0"
+                >Đăng ký dịch vụ</a
+              >
+            </li>
+            <li class="my-2">
+              <a href="#" class="link-offset-2 link-underline-opacity-0"
+                >Email cho chúng tôi</a
+              >
+            </li>
+            <li class="my-2">
+              <a href="#" class="link-offset-2 link-underline-opacity-0"
+                >Diễn đàn</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col-xxl-auto col-12 mx-5 mt-5 text-xxl-start text-center">
+          <h2>Tìm hiểu thêm</h2>
+          <ul class="mt-5">
+            <li class="my-2">
+              <a href="#" class="link-offset-2 link-underline-opacity-0"
+                >Tripster.com</a
+              >
+            </li>
+            <li class="my-2">
+              <a href="#" class="link-offset-2 link-underline-opacity-0"
+                >Dịch vụ tư vấn</a
+              >
+            </li>
+            <li class="my-2">
+              <a href="#" class="link-offset-2 link-underline-opacity-0"
+                >Điều khoản dịch vụ</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <div class="row text-center social-media">
+        <div class="col-12 text-center">
+          <a href="#"
+            ><i class="fa-brands fa-facebook fa-2x mx-2 py-3"></i
+          ></a>
+                            <a href="#"><i class="fa-brands fa-twitter fa-2x mx-2 py-3"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube fa-2x mx-2 py-3"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram fa-2x mx-2 py-3"></i
+          ></a>
+                            <a href="#"><i class="fa-brands fa-google fa-2x mx-2 py-3"></i></a>
+                </div>
+            </div>
+            <div class="row text-center">
+                <p class="copyright">Bản quyền thuộc về Tripster.com &copy; 2023</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
 </html>
