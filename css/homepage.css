@@ -98,3 +98,9 @@ input {
 .card-img-top {
   max-height: 275px;
 }
+
+.see-more {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row-reverse;
+}

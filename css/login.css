@@ -1,0 +1,84 @@
+.navbar {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  z-index: 1000;
+  font-family: "Poppins Regular", sans-serif;
+}
+
+main {
+  margin-top: var(--header-height);
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.5), transparent),
+    url(/assets/img/login/login2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.input {
+  border: 1px solid black;
+  border-radius: 8px;
+  height: 40px;
+  margin: 4px 0;
+  padding: 0 12px;
+}
+
+.login-form .or span {
+  height: 1px;
+  width: 50%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.login-form .save-login,
+.login-form .forgot-pwd {
+  font-size: 14px;
+}
+
+.form-check {
+  display: block;
+  min-height: 1.5rem;
+  padding-left: 1.5em;
+  margin-bottom: 0.125rem;
+}
+
+.login-form .signup-btn {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border-radius: 8px;
+  width: 100%;
+  margin: 12px 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.login-form .signup-btn:hover {
+  transform: scale(0.95);
+}
+
+.login-form .signup-link {
+  gap: 8px;
+  font-size: 14px;
+}
+
+.login-form .signup-link span:nth-child(2) {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.invalid-feedback {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 12px;
+}
+
+.modal-backdrop.fade {
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 1;
+}
+
+.was-validated .form-control:invalid,
+.form-control.is-invalid,
+.was-validated .form-control:valid,
+.form-control.is-valid {
+  padding-right: 0.75rem;
+}

@@ -1,0 +1,7 @@
+main {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.5), transparent),
+    url(/assets/img/recovery/recovery.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}

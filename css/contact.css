@@ -1,0 +1,25 @@
+/* main {
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.5), transparent),
+      url(/assets/img/recovery/recovery.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+  } */
+
+/* .contact-bg {
+  background: url(/assets/img/contact/contact.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  height: 100%;
+} */
+
+.navbar {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  z-index: 1000;
+  font-family: "Poppins Regular", sans-serif;
+}
