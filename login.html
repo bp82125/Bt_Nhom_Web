@@ -90,153 +90,183 @@
                   >Đăng Nhập</a
                 >
               </li>
-              <li class="nav-item dropdown px2">
-                <a
-                  class="nav-link dropdown-toggle text-black fs-5 rounded-pill px-3 my-2"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  data-bs-display="static"
-                  aria-expanded="false"
-                >
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </a>
-                            <div class="dropdown-menu dropdown-menu-end">
-                                <form class="d-md-inline-flex px-2" role="search">
-                                    <input class="form-control me-2" type="search" placeholder="Tìm kiếm địa điểm, tour,..." aria-label="Search" />
-                                    <button class="btn btn-outline-primary" style="white-space: nowrap" type="submit">
-                      Tìm kiếm
-                    </button>
-                                </form>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
-    <main class="d-flex align-items-center">
-        <div class="modal fade cart-modal" id="cart-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"></div>
+    <main class="d-flex">
+      <div
+        class="modal fade cart-modal"
+        id="cart-modal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      ></div>
 
-        <div class="login container-fluid py-5 d-flex justify-content-center">
-            <div class="row d-flex justify-content-xl-between justify-content-center mx-3 float-xl-end">
-                <form class="login-form needs-validation col-auto m-5 p-5 bg-white rounded shadow" novalidate>
-                    <h2 class="text-center">Chào mừng bạn đến với Tripster.</h2>
-                    <!-- Login google -->
-                    <div class="google-login my-3">
-                        <script src="https://accounts.google.com/gsi/client" async></script>
-                        <div id="g_id_onload" data-client_id="YOUR_GOOGLE_CLIENT_ID" data-login_uri="https://your.domain/your_login_endpoint" data-auto_prompt="false"></div>
-                        <div class="g_id_signin" data-type="standard" data-size="large" data-theme="filled_blue" data-text="sign_in_with" data-logo_alignment="left"></div>
-                    </div>
-                    <!-- Login google -->
-
-                    <!-- Or -->
-                    <div class="or col-12 d-flex g-3 justify-content-center align-items-center">
-                        <span></span>
-                        <p class="m-0 mx-3">Hoặc</p>
-                        <span></span>
-                    </div>
-                    <!-- Or -->
-
-                    <div class="col-12 mt-4">
-                        <label for="validationCustom02" class="form-label">Email *</label>
-                        <input type="email" class="form-control input email-input" id="validationCustom02" autocomplete="off" placeholder="Nhập địa chỉ email" required />
-                        <div class="invalid-feedback" style="height: 20px; display: block"></div>
-                    </div>
-
-                    <div class="col-12">
-                        <label for="validationCustom05" class="form-label">Mật khẩu *</label
-              >
-              <input
-                type="password"
-                class="form-control input password-input"
-                id="validationCustom05"
-                minlength="8"
-                placeholder="Nhập mật khẩu"
-                required
-              />
-              <div
-                class="invalid-feedback"
-                style="height: 20px; display: block"
-              ></div>
-            </div>
-
-            <div class="row d-flex justify-content-between">
-              <div class="col-auto save-login">
-                <div class="form-check p-0">
-                  <input
-                    class=""
-                    type="checkbox"
-                    value=""
-                    id="invalidCheck"
-                    required
-                  />
-                  <label class="" for="invalidCheck">Lưu đăng nhập</label>
-                    </div>
-            </div>
-
-            <div class="col-auto">
-                <a href="/recovery.html" class="text-black forgot-pwd">Quên mật khẩu?</a
-                >
-              </div>
-            </div>
-
-            <div class="col-12 my-4">
-              <button class="btn signup-btn submit-btn" type="submit">
-                Đăng nhập
-              </button>
-            </div>
-
-            <hr />
-
-            <a
-              href="./signup.html"
-              class="signup-link text-black mt-2 d-flex justify-content-center text-decoration-none"
+      <div class="login container-fluid py-5">
+        <div class="row d-flex mx-3 align-items-center justify-content-xxl-between justify-content-center">
+          <div class="col-12 col-lg-6 d-none d-xxl-block">
+            <h1 class="text-white">
+              Bạn đang tìm kiếm những nơi mới lạ để trải nghiệm
+            </h1>
+            <h3 class="text-white">
+              Hãy bắt đầu khám phá thế giới cùng chúng tôi
+            </h3>
+          </div>
+          <div class="col-12 col-sm-10 col-lg-auto">
+            <form
+              class="login-form needs-validation p-5 bg-white rounded shadow"
+              novalidate
             >
-              <span>Chưa có tài khoản?</span>
-              <span>Đăng ký ngay</span>
-            </a>
-                </form>
+              <h2 class="text-center">Chào mừng bạn đến với Tripster.</h2>
+              <!-- Login google -->
+              <div class="google-login my-3">
+                <script
+                  src="https://accounts.google.com/gsi/client"
+                  async
+                ></script>
+                <div
+                  id="g_id_onload"
+                  data-client_id="YOUR_GOOGLE_CLIENT_ID"
+                  data-login_uri="https://your.domain/your_login_endpoint"
+                  data-auto_prompt="false"
+                ></div>
+                <div
+                  class="g_id_signin"
+                  data-type="standard"
+                  data-size="large"
+                  data-theme="filled_blue"
+                  data-text="sign_in_with"
+                  data-logo_alignment="left"
+                ></div>
+              </div>
+              <!-- Login google -->
+
+              <!-- Or -->
+              <div
+                class="or col-12 d-flex g-3 justify-content-center align-items-center"
+              >
+                <span></span>
+                <p class="m-0 mx-3">Hoặc</p>
+                <span></span>
+              </div>
+              <!-- Or -->
+
+              <div class="col-12 mt-4">
+                <label for="validationCustom02" class="form-label"
+                  >Email *</label
+                >
+                <input
+                  type="email"
+                  class="form-control input email-input"
+                  id="validationCustom02"
+                  autocomplete="off"
+                  placeholder="Nhập địa chỉ email"
+                  required
+                />
+                <div
+                  class="invalid-feedback"
+                  style="height: 20px; display: block"
+                ></div>
+              </div>
+
+              <div class="col-12">
+                <label for="validationCustom05" class="form-label"
+                  >Mật khẩu *</label
+                >
+                <input
+                  type="password"
+                  class="form-control input password-input"
+                  id="validationCustom05"
+                  minlength="8"
+                  placeholder="Nhập mật khẩu"
+                  required
+                />
+                <div
+                  class="invalid-feedback"
+                  style="height: 20px; display: block"
+                ></div>
+              </div>
+
+              <div class="row d-flex justify-content-between">
+                <div class="col-auto save-login">
+                  <div class="form-check p-0">
+                    <input
+                      class=""
+                      type="checkbox"
+                      value=""
+                      id="invalidCheck"
+                      required
+                    />
+                    <label class="" for="invalidCheck">Lưu đăng nhập</label>
+                  </div>
+                </div>
+
+                <div class="col-auto">
+                  <a href="/recovery.html" class="text-black forgot-pwd"
+                    >Quên mật khẩu?</a
+                  >
+                </div>
+              </div>
+
+              <div class="col-12 my-4">
+                <button class="btn signup-btn submit-btn" type="submit">
+                  Đăng nhập
+                </button>
+              </div>
+
+              <hr />
+
+              <a
+                href="./signup.html"
+                class="signup-link text-black mt-2 d-flex justify-content-center text-decoration-none"
+              >
+                <span>Chưa có tài khoản?</span>
+                <span>Đăng ký ngay</span>
+              </a>
+                            </form>
+                </div>
             </div>
-        </div>
-        <button type="button" class="btn btn-primary modal-message-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="display: none">
+            </div>
+            <button type="button" class="btn btn-primary modal-message-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="display: none">
         Launch demo modal
       </button>
 
-        <!-- Modal -->
-        <div class="modal message fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Thông báo</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body"></div>
-                    <div class="modal-footer" style="border: none">
-                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">
+            <!-- Modal -->
+            <div class="modal message fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Thông báo</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body"></div>
+                        <div class="modal-footer" style="border: none">
+                            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">
                 OK
               </button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </main>
+            </main>
 
-    <footer>
-        <div class="container-fluid">
-            <div class="row p-5 d-flex justify-content-center text-xxl-start text-center">
-                <div class="col-xxl-3 col-12 mx-5 mt-5">
-                    <h2>Tripster.com</h2>
-                    <p class="mt-5">
-                        Không có giới hạn trong việc khám phá thế giới. Chúng tôi là người bạn đồng hành đáng tin cậy trên mỗi hành trình của bạn.
-                    </p>
-                </div>
-                <div class="col-xxl-auto col-12 mx-5 mt-5 text-xxl-start text-center">
-                    <h2>Du lịch</h2>
-                    <ul class="mt-5">
-                        <li class="my-2">
-                            <a href="#" class="link-offset-2 link-underline-opacity-0">Miền Bắc</a
+            <footer>
+                <div class="container-fluid">
+                    <div class="row p-5 d-flex justify-content-center text-xxl-start text-center">
+                        <div class="col-xxl-3 col-12 mx-5 mt-5">
+                            <h2>Tripster.com</h2>
+                            <p class="mt-5">
+                                Không có giới hạn trong việc khám phá thế giới. Chúng tôi là người bạn đồng hành đáng tin cậy trên mỗi hành trình của bạn.
+                            </p>
+                        </div>
+                        <div class="col-xxl-auto col-12 mx-5 mt-5 text-xxl-start text-center">
+                            <h2>Du lịch</h2>
+                            <ul class="mt-5">
+                                <li class="my-2">
+                                    <a href="#" class="link-offset-2 link-underline-opacity-0">Miền Bắc</a
                 >
               </li>
               <li class="my-2">
@@ -298,22 +328,22 @@
             <a href="#"
               ><i class="fa-brands fa-facebook fa-2x mx-2 py-3"></i
             ></a>
-                            <a href="#"><i class="fa-brands fa-twitter fa-2x mx-2 py-3"></i></a>
-                            <a href="#"><i class="fa-brands fa-youtube fa-2x mx-2 py-3"></i></a>
-                            <a href="#"><i class="fa-brands fa-instagram fa-2x mx-2 py-3"></i
+                                    <a href="#"><i class="fa-brands fa-twitter fa-2x mx-2 py-3"></i></a>
+                                    <a href="#"><i class="fa-brands fa-youtube fa-2x mx-2 py-3"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram fa-2x mx-2 py-3"></i
             ></a>
-                            <a href="#"><i class="fa-brands fa-google fa-2x mx-2 py-3"></i></a>
+                                    <a href="#"><i class="fa-brands fa-google fa-2x mx-2 py-3"></i></a>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <p class="copyright">Bản quyền thuộc về Tripster.com &copy; 2023</p>
+                    </div>
                 </div>
-            </div>
-            <div class="row text-center">
-                <p class="copyright">Bản quyền thuộc về Tripster.com &copy; 2023</p>
-            </div>
-        </div>
-    </footer>
-    <!-- Local JA -->
-    <script src="/js/validator.js"></script>
-    <script src="/js/login.js"></script>
-    <!-- Local JS -->
+            </footer>
+            <!-- Local JA -->
+            <script src="/js/validator.js"></script>
+            <script src="/js/login.js"></script>
+            <!-- Local JS -->
 </body>
 
 </html>

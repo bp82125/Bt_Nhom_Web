@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/homepage.css" />
     <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/tour.css">
 
     <!-- Local CSS -->
     <!-- Bootstrap JS -->
@@ -84,126 +85,89 @@
                   href="login.html"
                   >Đăng Nhập</a
                 >
-              </li>
-              <li class="nav-item dropdown px2">
-                <a
-                  class="nav-link dropdown-toggle text-black fs-5 rounded-pill px-3 my-2"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  data-bs-display="static"
-                  aria-expanded="false"
-                >
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </a>
-                            <div class="dropdown-menu dropdown-menu-end">
-                                <form class="d-md-inline-flex px-2" role="search" id="searchForm">
-                                    <input class="form-control me-2" type="search" placeholder="Tìm kiếm địa điểm, tour,..." aria-label="Search" id="searchInput" />
-                                    <button class="btn btn-outline-primary" style="white-space: nowrap" type="submit">
-                      Tìm kiếm
-                    </button>
-                                    <script src="js/search.js"></script>
-                                </form>
-                            </div>
-                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container">
-        <h1 class="mb-5 mt-3 text-center">Kết quả tìm kiếm</h1>
-        <div class="row" id="searchResultsContainer"></div>
-    </div>
-    <script src="js/resultsearch.js">
-    </script>
+    <main>
+        <div class="container">
+            <h1 class="mb-5 mt-3 text-center">Kết quả tìm kiếm</h1>
+            <div class="row" id="searchResultsContainer"></div>
+        </div>
+        <script src="js/resultsearch.js">
+        </script>
+    </main>
+
     <footer>
         <div class="container-fluid">
-            <div class="row p-5 d-flex justify-content-center">
-                <div class="col-md-3 col-12 mx-5 mt-5">
+            <div class="row p-5 d-flex justify-content-center text-xxl-start text-center">
+                <div class="col-xxl-3 col-12 mx-5 mt-5">
                     <h2>Tripster.com</h2>
                     <p class="mt-5">
                         Không có giới hạn trong việc khám phá thế giới. Chúng tôi là người bạn đồng hành đáng tin cậy trên mỗi hành trình của bạn.
                     </p>
                 </div>
-                <div class="col-md-auto col-12 mx-5 mt-5">
+                <div class="col-xxl-auto col-12 mx-5 mt-5 text-xxl-start text-center">
                     <h2>Du lịch</h2>
                     <ul class="mt-5">
                         <li class="my-2">
-                            <a href="#" class="link-offset-2 link-underline-opacity-0">Miền Bắc</a
-                  >
-                </li>
-                <li class="my-2">
-                  <a href="#" class="link-offset-2 link-underline-opacity-0"
-                    >Miền Trung</a
-                  >
-                </li>
-                <li class="my-2">
-                  <a href="#" class="link-offset-2 link-underline-opacity-0"
-                    >Miền nam</a
-                  >
-                </li>
-              </ul>
+                            <a href="#" class="link-offset-2 link-underline-opacity-0">Miền Bắc</a>
+                        </li>
+                        <li class="my-2">
+                            <a href="#" class="link-offset-2 link-underline-opacity-0">Miền Trung</a>
+                        </li>
+                        <li class="my-2">
+                            <a href="#" class="link-offset-2 link-underline-opacity-0">Miền Nam</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xxl-auto col-12 mx-5 mt-5 text-xxl-start text-center">
+                    <h2>Hỗ trợ</h2>
+                    <ul class="mt-5">
+                        <li class="my-2">
+                            <a href="#" class="link-offset-2 link-underline-opacity-0">Đăng ký dịch vụ</a>
+                        </li>
+                        <li class="my-2">
+                            <a href="#" class="link-offset-2 link-underline-opacity-0">Email cho chúng tôi</a>
+                        </li>
+                        <li class="my-2">
+                            <a href="#" class="link-offset-2 link-underline-opacity-0">Diễn đàn</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xxl-auto col-12 mx-5 mt-5 text-xxl-start text-center">
+                    <h2>Tìm hiểu thêm</h2>
+                    <ul class="mt-5">
+                        <li class="my-2">
+                            <a href="#" class="link-offset-2 link-underline-opacity-0">Tripster.com</a>
+                        </li>
+                        <li class="my-2">
+                            <a href="#" class="link-offset-2 link-underline-opacity-0">Dịch vụ tư vấn</a>
+                        </li>
+                        <li class="my-2">
+                            <a href="#" class="link-offset-2 link-underline-opacity-0">Điều khoản dịch vụ</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-xxl-auto col-12 mx-5 mt-5 text-xxl-start text-center">
-              <h2>Hỗ trợ</h2>
-              <ul class="mt-5">
-                <li class="my-2">
-                  <a href="#" class="link-offset-2 link-underline-opacity-0"
-                    >Đăng ký dịch vụ</a
-                  >
-                </li>
-                <li class="my-2">
-                  <a href="#" class="link-offset-2 link-underline-opacity-0"
-                    >Email cho chúng tôi</a
-                  >
-                </li>
-                <li class="my-2">
-                  <a href="#" class="link-offset-2 link-underline-opacity-0"
-                    >Diễn đàn</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="col-xxl-auto col-12 mx-5 mt-5 text-xxl-start text-center">
-              <h2>Tìm hiểu thêm</h2>
-              <ul class="mt-5">
-                <li class="my-2">
-                  <a href="#" class="link-offset-2 link-underline-opacity-0"
-                    >Tripster.com</a
-                  >
-                </li>
-                <li class="my-2">
-                  <a href="#" class="link-offset-2 link-underline-opacity-0"
-                    >Dịch vụ tư vấn</a
-                  >
-                </li>
-                <li class="my-2">
-                  <a href="#" class="link-offset-2 link-underline-opacity-0"
-                    >Điều khoản dịch vụ</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-          <hr />
-          <div class="row text-center social-media">
-            <div class="col-12 text-center">
-              <a href="#"
-                ><i class="fa-brands fa-facebook fa-2x mx-2 py-3"></i
-              ></a>
-                            <a href="#"><i class="fa-brands fa-twitter fa-2x mx-2 py-3"></i></a>
-                            <a href="#"><i class="fa-brands fa-youtube fa-2x mx-2 py-3"></i></a>
-                            <a href="#"><i class="fa-brands fa-instagram fa-2x mx-2 py-3"></i
-              ></a>
-                            <a href="#"><i class="fa-brands fa-google fa-2x mx-2 py-3"></i></a>
+            <hr />
+            <div class="row text-center social-media">
+                <div class="col-12 text-center">
+                    <a href="#"><i class="fa-brands fa-facebook fa-2x mx-2 py-3"></i
+        ></a>
+                    <a href="#"><i class="fa-brands fa-twitter fa-2x mx-2 py-3"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube fa-2x mx-2 py-3"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram fa-2x mx-2 py-3"></i
+        ></a>
+                    <a href="#"><i class="fa-brands fa-google fa-2x mx-2 py-3"></i></a>
                 </div>
             </div>
             <div class="row text-center">
                 <p class="copyright">Bản quyền thuộc về Tripster.com &copy; 2023</p>
             </div>
-        </div>
-    </footer>
+            </div>
+            </footer>
 </body>
 
 </html>

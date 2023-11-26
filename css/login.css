@@ -11,10 +11,10 @@
 main {
   margin-top: var(--header-height);
   background: linear-gradient(to left, rgba(0, 0, 0, 0.5), transparent),
-    url(/assets/img/login/login.jpg);
+    url(/assets/img/login/login2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
 }
 
 .input {
