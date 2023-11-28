@@ -17,6 +17,13 @@
 
     <!-- Bootstrap CSS -->
 
+    <!-- Owl Carousel CSS -->
+
+    <link rel="stylesheet" href="/libs/owlcarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/libs/owlcarousel/owl.theme.default.min.css" />
+
+    <!-- Owl Carousel CSS -->
+
     <!-- Local CSS -->
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/homepage.css" />
@@ -60,9 +67,11 @@
     ></script>
     <!-- Popper JS -->
 
-    <!-- <script src="/js/script.js"></script> -->
+    <!-- Owl Carousel JS -->
 
-    <script src="/js/tour.js"></script>
+    <script src="/libs/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Owl Carousel JS -->
   </head>
 
   <body>
@@ -143,38 +152,40 @@
 
     <!-- slider -->
 
-    <div class="container">
-      <div
-        id="carouselExampleAutoplaying"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
-            <div class="carousel-item">
-                <div class="row">
-                  <div class="col">slide 1</div>
-                  <div class="col">slide 2</div>
-                  <div class="col">slide 3</div>
-                </div>
-             </div>
-             <div class="carousel-item">
-                <div class="row">
-                  <div class="col">slide 5</div>
-                  <div class="col">slide 6</div>
-                  <div class="col">slide 7</div>
-                </div>
-             </div>
-        </div>
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <a href="#contents"
+          ><img src="/assets/img/tour/banner1.png" alt=""
+        /></a>
+      </div>
+      <div class="item">
+        <a href="#contents"
+          ><img src="/assets/img/tour/banner2.jpg" alt=""
+        /></a>
+      </div>
+      <div class="item">
+        <a href="#contents"
+          ><img src="/assets/img/tour/banner3.png" alt=""
+        /></a>
+      </div>
+      <div class="item">
+        <a href="#contents"
+          ><img src="/assets/img/tour/banner4.png" alt=""
+        /></a>
+      </div>
+      <div class="item">
+        <a href="#contents"
+          ><img src="/assets/img/tour/banner5.png" alt=""
+        /></a>
       </div>
     </div>
-
     <!-- slider -->
 
-    <div class="container-fluid mt-2">
+    <div class="container-fluid mt-2" id="contents">
       <!-- search -->
       <div class="row justify-content-center">
         <div class="col-12 col-sm-12 col-md-8 col-lg-6 col-xl-4 mb-4 mx-1">
-          <form class="d-md-flex w-100 px-2" id="searchForm">
+          <form class="d-md-flex w-100 px-2 text-center" id="searchForm">
             <div class="col-12 col-sm-12 col-md-12 col-xl-12 m-2">
               <input
                 class="form-control me-2 border-black"
@@ -754,5 +765,6 @@
       </div>
     </footer>
     <script src="js/search.js"></script>
+    <script src="js/tour.js"></script>
   </body>
 </html>

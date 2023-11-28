@@ -24,3 +24,8 @@
 .carousel-item::before {
   background: none;
 }
+
+.owl-carousel img:hover {
+  opacity: 0.5;
+  transition: ease-in-out 0.25s;
+}
