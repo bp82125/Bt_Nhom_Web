@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             setTimeout(function () {
                 formElement.reset();
-                window.location.assign("../Login/login.html");
+                window.location.assign("./login.html");
             }, 1500);
         }
     });

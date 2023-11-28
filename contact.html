@@ -85,25 +85,14 @@
                   >Đăng Nhập</a
                 >
               </li>
-              <li class="nav-item dropdown px2">
+              <li class="nav-item px-2">
                 <a
-                  class="nav-link dropdown-toggle text-black fs-5 rounded-pill px-3 my-2"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  data-bs-display="static"
-                  aria-expanded="false"
-                >
-                  <i class="fa-solid fa-magnifying-glass"></i>
+                  class="nav-link text-black fs-5 rounded-pill px-3 my-2 d-none d-lg-block"
+                  href="/user.html"
+                  ><i class="fa-regular fa-user"></i
+                ></a>
+                            <a class="nav-link text-black fs-5 rounded-pill px-3 my-2 d-lg-none" href="/user.html">Tài Khoản
                 </a>
-                            <div class="dropdown-menu dropdown-menu-end">
-                                <form class="d-md-inline-flex px-2" role="search">
-                                    <input class="form-control me-2" type="search" placeholder="Tìm kiếm địa điểm, tour,..." aria-label="Search" />
-                                    <button class="btn btn-outline-primary" style="white-space: nowrap" type="submit">
-                      Tìm kiếm
-                    </button>
-                                </form>
-                            </div>
                         </li>
                     </ul>
                 </div>
@@ -116,9 +105,9 @@
 
         <div class="container-fluid py-5 d-flex justify-content-center">
             <div class="row d-flex justify-content-center mx-3 w-100 align-items-center">
-                <div class="col-xxl-6 col-auto">
-                    <form class="contact-form needs-validation col-auto p-5 m-5 bg-white rounded shadow" novalidate>
-                        <h2 class="text-center mb-5">Liên hệ với chúng tôi</h2>
+                <div class="col-auto col-xl-6 d-flex flex-row justify-content-center">
+                    <form class="contact-form w-100 needs-validation col-6 p-3 p-xl-5 bg-white rounded shadow" novalidate>
+                        <h1 class="text-center mb-5">Liên hệ với chúng tôi</h1>
 
                         <div class="row">
                             <div class="col-lg-4 col-12 mt-4">
@@ -218,26 +207,6 @@
               </div>
 
               <div class="row">
-                <!-- <div class="col-12">
-                  <label for="validationCustom05" class="form-label"
-                    >Tiêu đề *</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control input password-input"
-                    id="validationCustom05"
-                    minlength="8"
-                    placeholder="Nhập tiêu đề"
-                    required
-                  />
-                  <div
-                    class="invalid-feedback"
-                    style="height: 20px; display: block"
-                  ></div>
-                </div> -->
-              </div>
-
-              <div class="row">
                 <div class="col-12">
                   <label for="floatingTextarea2" class="form-label"
                     >Nội dung *</label
@@ -251,9 +220,9 @@
                 </div>
               </div>
 
-              <div class="col-12 my-4 text-center">
+              <div class="col-12 w-100 my-4 text-center">
                 <button
-                  class="btn signup-btn submit-btn btn-dark w-25"
+                  class="btn signup-btn submit-btn btn-dark w-50"
                   type="submit"
                 >
                   Gửi
@@ -261,14 +230,14 @@
                 </button>
               </div>
             </form>
+            <div class="col-auto d-none d-xl-flex">
+              <img
+                class="h-100 rounded-end shadow-lg"
+                src="/assets/img/contact/contact.jpg"
+                alt=""
+              />
+            </div>
           </div>
-          <!-- <div class="col-lg-4 col-3 d-none d-xxl-block">
-            <img
-              src="/assets/img/contact/contact2.jpg"
-              alt=""
-              class="img-fluid p-5"
-            />
-          </div> -->
         </div>
       </div>
       <button
@@ -394,22 +363,22 @@
             <a href="#"
               ><i class="fa-brands fa-facebook fa-2x mx-2 py-3"></i
             ></a>
-            <a href="#"><i class="fa-brands fa-twitter fa-2x mx-2 py-3"></i></a>
-            <a href="#"><i class="fa-brands fa-youtube fa-2x mx-2 py-3"></i></a>
-            <a href="#"
-              ><i class="fa-brands fa-instagram fa-2x mx-2 py-3"></i
+                            <a href="#"><i class="fa-brands fa-twitter fa-2x mx-2 py-3"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube fa-2x mx-2 py-3"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram fa-2x mx-2 py-3"></i
             ></a>
-            <a href="#"><i class="fa-brands fa-google fa-2x mx-2 py-3"></i></a>
-          </div>
-        </div>
-        <div class="row text-center">
-          <p class="copyright">Bản quyền thuộc về Tripster.com &copy; 2023</p>
-        </div>
-      </div>
-    </footer>
-    <!-- Local JS -->
-    <script src="/js/validator.js"></script>
-    <script src="/js/login.js"></script>
-    <!-- Local JS -->
-  </body>
+                            <a href="#"><i class="fa-brands fa-google fa-2x mx-2 py-3"></i></a>
+                </div>
+            </div>
+            <div class="row text-center">
+                <p class="copyright">Bản quyền thuộc về Tripster.com &copy; 2023</p>
+            </div>
+            </div>
+            </footer>
+            <!-- Local JS -->
+            <script src="/js/validator.js"></script>
+            <script src="/js/login.js"></script>
+            <!-- Local JS -->
+</body>
+
 </html>
