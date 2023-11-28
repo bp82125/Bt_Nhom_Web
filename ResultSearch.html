@@ -16,7 +16,7 @@
 
     <!-- Local CSS -->
     <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/homepage.css" />
+    <!-- <link rel="stylesheet" href="/css/homepage.css" /> -->
     <link rel="stylesheet" href="css/news.css">
     <link rel="stylesheet" href="css/tour.css">
 
@@ -56,7 +56,20 @@
       referrerpolicy="no-referrer"
     ></script>
     <!-- Popper JS -->
-  </head>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        main {
+            flex: 1;
+            min-height: 50vh;
+        }
+    </style>
+</head>
+
 
   <body>
     <header>
@@ -180,11 +193,14 @@
       </nav>
     </header>
     <main>
-      <div class="container">
-        <h1 class="mb-5 mt-3 text-center">Kết quả tìm kiếm</h1>
-        <div class="row" id="searchResultsContainer"></div>
-      </div>
-      <script src="js/resultsearch.js"></script>
+
+        <div class="container">
+            <h1 class="mb-5 mt-5 text-center">Kết quả tìm kiếm</h1>
+            <div class="row " id="searchResultsContainer"></div>
+        </div>
+        <script src="js/resultsearch.js">
+        </script>
+
     </main>
 
     <footer>
