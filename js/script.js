@@ -4,6 +4,7 @@ $(document).ready(function () {
             $('nav').addClass('sticky');
             $('nav a').removeClass('text-white');
             $('nav a').addClass('text-black');
+
         } else {
             $('nav').removeClass('sticky');
             $('nav a').removeClass('text-black');
