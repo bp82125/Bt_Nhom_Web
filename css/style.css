@@ -23,8 +23,8 @@ nav.sticky {
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
-nav a:hover,
-nav i:hover {
+nav li a:hover,
+nav li i:hover {
   color: white !important;
 }
 
@@ -53,7 +53,6 @@ nav i:hover {
 .dropdown-menu form {
   min-width: 400px;
 }
-
 /* Navbar */
 
 /* footer */
