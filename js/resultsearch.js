@@ -5,14 +5,22 @@ document.addEventListener('DOMContentLoaded', function() {
     var searchResultsContainer = document.getElementById('searchResultsContainer');
     var classList = document.getElementById('classList');
 
-    // Hiển thị kết quả tìm kiếm trên trang, bao gồm cả tên class để lấy phần bootstrap
-    searchResults.forEach(function(result) {
-        var cardDiv = document.createElement('div');
-        cardDiv.innerHTML = result.html;
+    if (searchResults && searchResults.length > 0) {
 
-        // Thêm lại tên class từ thông tin đã lưu
-        var cardElement = cardDiv.firstChild;
-        cardElement.classList.add(...result.classes.split(' '));
-        searchResultsContainer.appendChild(cardElement);
-    });
+        searchResults.forEach(function(result) {
+            var cardDiv = document.createElement('div');
+            cardDiv.innerHTML = result.html;
+
+            var cardElement = cardDiv.firstChild;
+            cardElement.classList.add(...result.classes.split(' '));
+            searchResultsContainer.appendChild(cardElement);
+
+        });
+    } else {
+        var noResultsMessage = document.createElement('p');
+        noResultsMessage.textContent = 'Không tìm thấy kết quả trùng khớp với từ khóa bạn nhập.';
+        noResultsMessage.style.fontSize = '25px';
+        noResultsMessage.classList.add('text-center');
+        searchResultsContainer.appendChild(noResultsMessage);
+    }
 });
