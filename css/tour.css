@@ -1,0 +1,31 @@
+.card-img-top {
+  height: 350px;
+  object-fit: cover;
+}
+
+.card-title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2; /* Number of lines to show */
+  line-clamp: 2;
+  max-height: 3.6em; /* (line height) x (number of lines) */
+}
+
+.card-title:hover {
+  color: #ec9108;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.carousel-item::before {
+  background: none;
+}
+
+.owl-carousel img:hover {
+  opacity: 0.5;
+  transition: ease-in-out 0.25s;
+}
