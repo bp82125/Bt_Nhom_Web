@@ -90,6 +90,7 @@ input {
 
 .btn-primary {
   background-color: #ec9108;
+  border: none;
 }
 
 .container-end-body .btn-primary {
@@ -117,4 +118,32 @@ input {
     backdrop-filter: blur(4px);
     transition: background-color 0.3s cubic-bezier(0.42, 0, 0.58, 1);
   }
+}
+
+.tour .card:hover {
+  background: #fff;
+  box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.tour .card:hover > .image-box img {
+  opacity: 0.7;
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  -o-transform: scale(1.15);
+  transform: scale(1.15);
+  transition: all 0.25s ease-in;
+}
+
+.tour .image-box {
+  overflow: hidden;
+}
+
+.tour .card-img-top {
+  max-height: 275px;
 }

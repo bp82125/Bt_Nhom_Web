@@ -17,7 +17,18 @@
   color: #ec9108;
 }
 
-.card:hover {
+.btn-primary {
+  background-color: #ec9108;
+  border: none;
+}
+
+button:hover,
+.btn:hover {
+  transform: scale(0.95);
+  transition: ease-in-out 0.25s;
+}
+
+.btn-primary .card:hover {
   cursor: pointer;
 }
 
@@ -27,5 +38,47 @@
 
 .owl-carousel img:hover {
   opacity: 0.5;
-  transition: ease-in-out 0.25s;
+  transition: ease-in-out 0.2s;
+}
+
+nav {
+  background: none;
+}
+
+.navbar {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  z-index: 1000;
+  font-family: "Poppins Regular", sans-serif;
+}
+
+.card:hover {
+  background: #fff;
+  box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.card:hover > .image-box img {
+  opacity: 0.7;
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  -o-transform: scale(1.15);
+  transform: scale(1.15);
+  transition: all 0.25s ease-in;
+}
+
+.image-box {
+  overflow: hidden;
+}
+
+.card-img-top {
+  max-height: 275px;
 }
