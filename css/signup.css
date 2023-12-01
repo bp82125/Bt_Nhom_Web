@@ -1,98 +1,98 @@
 .navbar {
-    position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 10px;
-    z-index: 1000;
-    font-family: "Poppins Regular", sans-serif;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  z-index: 1000;
+  font-family: "Poppins Regular", sans-serif;
 }
 
 main {
-    margin-top: var(--header-height);
-    background: linear-gradient(to left, rgba(0, 0, 0, 0.5), transparent),
-      url(/assets/img/login/login.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
+  margin-top: var(--header-height);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent),
+    url(../assets/img/signup/signup.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
 }
 
 .input {
-    border: 1px solid black;
-    border-radius: 8px;
-    height: 40px;
-    width: 100%;
-    margin: 4px 0;
-    padding: 0 12px;
+  border: 1px solid black;
+  border-radius: 8px;
+  height: 40px;
+  width: 100%;
+  margin: 4px 0;
+  padding: 0 12px;
 }
 
 .signup .or span {
-    height: 1px;
-    width: 50%;
-    background: rgba(0, 0, 0, 0.5);
+  height: 1px;
+  width: 50%;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .signup .agree-term {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .form-check {
-    display: block;
-    min-height: 1.5rem;
-    padding-left: 1.5em;
-    margin-bottom: 0.125rem;
+  display: block;
+  min-height: 1.5rem;
+  padding-left: 1.5em;
+  margin-bottom: 0.125rem;
 }
 
 .signup .agree-term .form-check-input {
-    box-shadow: none;
-    outline: none;
-    border: 1px solid black;
-    margin-right: 8px;
+  box-shadow: none;
+  outline: none;
+  border: 1px solid black;
+  margin-right: 8px;
 }
 
 .signup .agree-term label {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 12px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 12px;
 }
 
 .signup .agree-term label span {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .invalid-feedback {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 12px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 12px;
 }
 
 .signup .signup-btn {
-    background: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    border-radius: 8px;
-    width: 100%;
-    margin: 12px 0;
-    transition: transform 0.3s ease-in-out;
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border-radius: 8px;
+  width: 100%;
+  margin: 12px 0;
+  transition: transform 0.3s ease-in-out;
 }
 
 .signup .signup-btn:hover {
-    transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .signup .login-link {
-    gap: 8px;
-    font-size: 14px;
+  gap: 8px;
+  font-size: 14px;
 }
 
 .signup .login-link span:nth-child(2) {
-    text-decoration: underline;
-    font-weight: 600;
+  text-decoration: underline;
+  font-weight: 600;
 }
 
 .invalid-feedback {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 12px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 12px;
 }
 
 .modal-backdrop.fade {
-    background-color: rgba(0, 0, 0, 0.4);
-    opacity: 1;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 1;
 }

@@ -4,60 +4,31 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Tripster</title>
-
+    <link rel="icon" href="./assets/img/logo/logo5.png" />
     <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="./libs/bootstraps/css/bootstrap.min.css" />
     <!-- Bootstrap CSS -->
 
     <!-- Local CSS -->
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/login.css" />
     <!-- Local CSS -->
 
     <!-- Bootstrap JS -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
+    <script src="./libs/bootstraps/js/bootstrap.bundle.min.js"></script>
     <!-- Bootstrap JS -->
 
     <!-- Font Awesome Icon  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="./libs/fontawesome/css/all.min.css" />
     <!-- Font Awesome Icon  -->
 
     <!-- Jquery -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <script src="./libs/jquery/jquery-3.7.1.min.js"></script>
     <!-- Jquery -->
 
-    <!-- Popper JS -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"
-      integrity="sha512-TPh2Oxlg1zp+kz3nFA0C5vVC6leG/6mm1z9+mA81MI5eaUVqasPLO8Cuk4gMF4gUfP5etR73rgU/8PNMsSesoQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <!-- Popper JS -->
-
-    <!-- Local JA -->
-    <script src="/js/validator.js"></script>
-    <script src="/js/login.js"></script>
+    <!-- Local JS -->
+    <script src="./js/validator.js"></script>
+    <script src="./js/login.js"></script>
     <!-- Local JS -->
   </head>
 
@@ -66,9 +37,9 @@
     <header>
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand text-black p-3" href="#"
+          <a class="navbar-brand text-black p-3" href="./index.html"
             ><img
-              src="/assets/img/homepage/logo.png"
+              src="./assets/img/logo/logo5.png"
               alt=""
               class="img-fluid me-2"
             />Tripster</a
@@ -91,81 +62,65 @@
                 <a
                   class="nav-link text-black fs-5 rounded-pill px-3 my-2"
                   aria-current="page"
-                  href="index.html"
+                  href="./index.html"
                   >Trang Chủ</a
                 >
               </li>
               <li class="nav-item px-2">
                 <a
                   class="nav-link text-black fs-5 rounded-pill px-3 my-2"
-                  href="/tour.html"
+                  href="./tour.html"
                   >Tour</a
                 >
               </li>
+
               <li class="nav-item px-2">
                 <a
                   class="nav-link text-black fs-5 rounded-pill px-3 my-2"
-                  href="/tintuc.html"
+                  href="./tintuc.html"
                   >Tin Tức</a
                 >
               </li>
               <li class="nav-item px-2">
                 <a
                   class="nav-link text-black fs-5 rounded-pill px-3 my-2"
-                  href="/contact.html"
+                  href="./contact.html"
                   >Liên Hệ</a
                 >
               </li>
               <li class="nav-item px-2">
                 <a
                   class="nav-link text-black fs-5 rounded-pill px-3 my-2"
-                  href="/signup.html"
+                  href="./signup.html"
                   >Đăng Ký</a
                 >
               </li>
               <li class="nav-item px-2">
                 <a
                   class="nav-link text-black fs-5 rounded-pill px-3 my-2"
-                  href="/login.html"
+                  href="./login.html"
                   >Đăng Nhập</a
                 >
               </li>
-              <li class="nav-item dropdown px2">
+              <li class="nav-item px-2">
                 <a
-                  class="nav-link dropdown-toggle text-black fs-5 rounded-pill px-3 my-2"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  data-bs-display="static"
-                  aria-expanded="false"
-                >
-                  <i class="fa-solid fa-magnifying-glass"></i>
+                  class="nav-link text-black fs-5 rounded-pill px-3 my-2 d-none d-lg-block"
+                  href="./user.html"
+                  ><i class="fa-regular fa-user"></i
+                ></a>
+                <a
+                  class="nav-link text-black fs-5 rounded-pill px-3 my-2 d-lg-none"
+                  href="./user.html"
+                  >Tài Khoản
                 </a>
-                <div class="dropdown-menu dropdown-menu-end">
-                  <form class="d-md-inline-flex px-2" role="search">
-                    <input
-                      class="form-control me-2"
-                      type="search"
-                      placeholder="Tìm kiếm địa điểm, tour,..."
-                      aria-label="Search"
-                    />
-                    <button
-                      class="btn btn-outline-primary"
-                      style="white-space: nowrap"
-                      type="submit"
-                    >
-                      Tìm kiếm
-                    </button>
-                  </form>
-                </div>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-
-    <main class="d-flex">
+    <!-- Navbar -->
+    <main class="d-flex align-items-center">
       <div
         class="modal fade cart-modal"
         id="cart-modal"
@@ -214,7 +169,6 @@
                 ></div>
               </div>
               <!-- Login google -->
-
               <!-- Or -->
               <div
                 class="or col-12 d-flex g-3 justify-content-center align-items-center"
@@ -263,7 +217,7 @@
 
               <div class="row d-flex justify-content-between">
                 <div class="col-auto save-login">
-                  <div class="form-check p-0">
+                  <div class="form-check p-0 d-flex align-items-center">
                     <input
                       class=""
                       type="checkbox"
@@ -271,12 +225,12 @@
                       id="invalidCheck"
                       required
                     />
-                    <label class="" for="invalidCheck">Lưu đăng nhập</label>
+                    <label class="mx-1" for="invalidCheck">Lưu đăng nhập</label>
                   </div>
                 </div>
 
                 <div class="col-auto">
-                  <a href="/recovery.html" class="text-black forgot-pwd"
+                  <a href="./recovery.html" class="text-black forgot-pwd"
                     >Quên mật khẩu?</a
                   >
                 </div>
@@ -289,7 +243,6 @@
               </div>
 
               <hr />
-
               <a
                 href="./signup.html"
                 class="signup-link text-black mt-2 d-flex justify-content-center text-decoration-none"
@@ -300,45 +253,48 @@
             </form>
           </div>
         </div>
-      </div>
-      <button
-        type="button"
-        class="btn btn-primary modal-message-btn"
-        data-bs-toggle="modal"
-        data-bs-target="#exampleModal"
-        style="display: none"
-      >
-        Launch demo modal
-      </button>
 
-      <!-- Modal -->
-      <div
-        class="modal message fade"
-        id="exampleModal"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Thông báo</h1>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body"></div>
-            <div class="modal-footer" style="border: none">
-              <button
-                type="button"
-                class="btn btn-dark"
-                data-bs-dismiss="modal"
-              >
-                OK
-              </button>
+        <button
+          type="button"
+          class="btn btn-primary modal-message-btn"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+          style="display: none"
+        >
+          Launch demo modal
+        </button>
+
+        <!-- Modal -->
+        <div
+          class="modal message fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                  Thông báo
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body"></div>
+              <div class="modal-footer" style="border: none">
+                <button
+                  type="button"
+                  class="btn btn-dark"
+                  data-bs-dismiss="modal"
+                >
+                  OK
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -438,8 +394,8 @@
       </div>
     </footer>
     <!-- Local JA -->
-    <script src="/js/validator.js"></script>
-    <script src="/js/login.js"></script>
+    <script src="./js/validator.js"></script>
+    <script src="./js/login.js"></script>
     <!-- Local JS -->
   </body>
 </html>

@@ -1,209 +1,230 @@
 <!DOCTYPE html>
 <html lang="vi">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Tripster</title>
-
+    <link rel="icon" href="./assets/img/logo/logo5.png" />
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./libs/bootstraps/css/bootstrap.min.css" />
     <!-- Bootstrap CSS -->
 
     <!-- Local CSS -->
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/homepage.css" />
-    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/tour.css" />
 
     <!-- Local CSS -->
+
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./libs/bootstraps/js/bootstrap.bundle.min.js"></script>
     <!-- Bootstrap JS -->
 
     <!-- Font Awesome Icon  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="./libs/fontawesome/css/all.min.css" />
     <!-- Font Awesome Icon  -->
 
     <!-- Jquery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./libs/jquery/jquery-3.7.1.min.js"></script>
     <!-- Jquery -->
 
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js" integrity="sha512-TPh2Oxlg1zp+kz3nFA0C5vVC6leG/6mm1z9+mA81MI5eaUVqasPLO8Cuk4gMF4gUfP5etR73rgU/8PNMsSesoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- Popper JS -->
-</head>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+      }
 
-<body>
+      main {
+        flex: 1;
+        min-height: 50vh;
+      }
+    </style>
+  </head>
+
+  <body>
     <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand text-black p-3" href="index.html"><img src="/assets/img/homepage/logo.png" alt="" class="img-fluid me-2" />Tripster</a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white p-3" href="./index.html"
+            ><img
+              src="./assets/img/logo/logo2.png"
+              alt=""
+              class="img-fluid me-2"
+            />Tripster</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="text-white"><i class="fa-solid fa-bars"></i></span>
           </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto my-lg-0 me-sm-0 my-sm-0">
-                        <li class="nav-item px-2">
-                            <a class="nav-link text-black fs-5 rounded-pill px-3 my-2" aria-current="page" href="index.html">Trang Chủ</a
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto my-lg-0 me-sm-0 my-sm-0">
+              <li class="nav-item px-2">
+                <a
+                  class="nav-link text-white fs-5 rounded-pill px-3 my-2"
+                  aria-current="page"
+                  href="./index.html"
+                  >Trang Chủ</a
                 >
               </li>
               <li class="nav-item px-2">
                 <a
-                  class="nav-link text-black fs-5 rounded-pill px-3 my-2"
-                  href="tour.html"
+                  class="nav-link text-white fs-5 rounded-pill px-3 my-2"
+                  href="./tour.html"
                   >Tour</a
                 >
               </li>
-
               <li class="nav-item px-2">
                 <a
-                  class="nav-link text-black fs-5 rounded-pill px-3 my-2"
-                  href="tintuc.html"
+                  class="nav-link text-white fs-5 rounded-pill px-3 my-2"
+                  href="./tintuc.html"
                   >Tin Tức</a
                 >
               </li>
               <li class="nav-item px-2">
                 <a
-                  class="nav-link text-black fs-5 rounded-pill px-3 my-2"
-                  href="contact.html"
+                  class="nav-link text-white fs-5 rounded-pill px-3 my-2"
+                  href="./contact.html"
                   >Liên Hệ</a
                 >
               </li>
               <li class="nav-item px-2">
                 <a
-                  class="nav-link text-black fs-5 rounded-pill px-3 my-2"
-                  href="signup.html"
+                  class="nav-link text-white fs-5 rounded-pill px-3 my-2"
+                  href="./signup.html"
                   >Đăng Ký</a
                 >
               </li>
               <li class="nav-item px-2">
                 <a
-                  class="nav-link text-black fs-5 rounded-pill px-3 my-2"
-                  href="login.html"
+                  class="nav-link text-white fs-5 rounded-pill px-3 my-2"
+                  href="./login.html"
                   >Đăng Nhập</a
                 >
               </li>
-              <li class="nav-item dropdown px2">
-                <a
-                  class="nav-link dropdown-toggle text-black fs-5 rounded-pill px-3 my-2"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  data-bs-display="static"
-                  aria-expanded="false"
-                >
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </a>
-                            <div class="dropdown-menu dropdown-menu-end">
-                                <form class="d-md-inline-flex px-2" role="search" id="searchForm">
-                                    <input class="form-control me-2" type="search" placeholder="Tìm kiếm địa điểm, tour,..." aria-label="Search" id="searchInput" />
-                                    <button class="btn btn-outline-primary" style="white-space: nowrap" type="submit">
-                      Tìm kiếm
-                    </button>
-                                    <script src="js/search.js"></script>
-                                </form>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div class="container">
-        <h1 class="mb-5 mt-3 text-center">Kết quả tìm kiếm</h1>
-        <div class="row" id="searchResultsContainer"></div>
-    </div>
-    <script src="js/resultsearch.js">
-    </script>
-    <footer>
-        <div class="container-fluid">
-            <div class="row p-5 d-flex justify-content-center">
-                <div class="col-md-3 col-12 mx-5 mt-5">
-                    <h2>Tripster.com</h2>
-                    <p class="mt-5">
-                        Không có giới hạn trong việc khám phá thế giới. Chúng tôi là người bạn đồng hành đáng tin cậy trên mỗi hành trình của bạn.
-                    </p>
-                </div>
-                <div class="col-md-auto col-12 mx-5 mt-5">
-                    <h2>Du lịch</h2>
-                    <ul class="mt-5">
-                        <li class="my-2">
-                            <a href="#" class="link-offset-2 link-underline-opacity-0">Miền Bắc</a
-                  >
-                </li>
-                <li class="my-2">
-                  <a href="#" class="link-offset-2 link-underline-opacity-0"
-                    >Miền Trung</a
-                  >
-                </li>
-                <li class="my-2">
-                  <a href="#" class="link-offset-2 link-underline-opacity-0"
-                    >Miền nam</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="col-xxl-auto col-12 mx-5 mt-5 text-xxl-start text-center">
-              <h2>Hỗ trợ</h2>
-              <ul class="mt-5">
-                <li class="my-2">
-                  <a href="#" class="link-offset-2 link-underline-opacity-0"
-                    >Đăng ký dịch vụ</a
-                  >
-                </li>
-                <li class="my-2">
-                  <a href="#" class="link-offset-2 link-underline-opacity-0"
-                    >Email cho chúng tôi</a
-                  >
-                </li>
-                <li class="my-2">
-                  <a href="#" class="link-offset-2 link-underline-opacity-0"
-                    >Diễn đàn</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="col-xxl-auto col-12 mx-5 mt-5 text-xxl-start text-center">
-              <h2>Tìm hiểu thêm</h2>
-              <ul class="mt-5">
-                <li class="my-2">
-                  <a href="#" class="link-offset-2 link-underline-opacity-0"
-                    >Tripster.com</a
-                  >
-                </li>
-                <li class="my-2">
-                  <a href="#" class="link-offset-2 link-underline-opacity-0"
-                    >Dịch vụ tư vấn</a
-                  >
-                </li>
-                <li class="my-2">
-                  <a href="#" class="link-offset-2 link-underline-opacity-0"
-                    >Điều khoản dịch vụ</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-          <hr />
-          <div class="row text-center social-media">
-            <div class="col-12 text-center">
-              <a href="#"
-                ><i class="fa-brands fa-facebook fa-2x mx-2 py-3"></i
-              ></a>
-                            <a href="#"><i class="fa-brands fa-twitter fa-2x mx-2 py-3"></i></a>
-                            <a href="#"><i class="fa-brands fa-youtube fa-2x mx-2 py-3"></i></a>
-                            <a href="#"><i class="fa-brands fa-instagram fa-2x mx-2 py-3"></i
-              ></a>
-                            <a href="#"><i class="fa-brands fa-google fa-2x mx-2 py-3"></i></a>
-                </div>
-            </div>
-            <div class="row text-center">
-                <p class="copyright">Bản quyền thuộc về Tripster.com &copy; 2023</p>
-            </div>
-        </div>
-    </footer>
-</body>
 
+              <li class="nav-item px-2">
+                <a
+                  class="nav-link text-white fs-5 rounded-pill px-3 my-2 d-none d-lg-block"
+                  href="./user.html"
+                  ><i class="fa-regular fa-user"></i
+                ></a>
+                <a
+                  class="nav-link text-white fs-5 rounded-pill px-3 my-2 d-lg-none"
+                  href="./user.html"
+                  >Tài Khoản
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <h1 class="mb-5 mt-5 text-center">Kết quả tìm kiếm</h1>
+        <div class="row" id="searchResultsContainer"></div>
+      </div>
+      <script src="js/resultsearch.js"></script>
+    </main>
+
+    <footer>
+      <div class="container-fluid">
+        <div
+          class="row p-5 d-flex justify-content-center text-xxl-start text-center"
+        >
+          <div class="col-xxl-3 col-12 mx-5 mt-5">
+            <h2>Tripster.com</h2>
+            <p class="mt-5">
+              Không có giới hạn trong việc khám phá thế giới. Chúng tôi là người
+              bạn đồng hành đáng tin cậy trên mỗi hành trình của bạn.
+            </p>
+          </div>
+          <div class="col-xxl-auto col-12 mx-5 mt-5 text-xxl-start text-center">
+            <h2>Du lịch</h2>
+            <ul class="mt-5">
+              <li class="my-2">
+                <a href="#" class="link-offset-2 link-underline-opacity-0"
+                  >Miền Bắc</a
+                >
+              </li>
+              <li class="my-2">
+                <a href="#" class="link-offset-2 link-underline-opacity-0"
+                  >Miền Trung</a
+                >
+              </li>
+              <li class="my-2">
+                <a href="#" class="link-offset-2 link-underline-opacity-0"
+                  >Miền Nam</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-xxl-auto col-12 mx-5 mt-5 text-xxl-start text-center">
+            <h2>Hỗ trợ</h2>
+            <ul class="mt-5">
+              <li class="my-2">
+                <a href="#" class="link-offset-2 link-underline-opacity-0"
+                  >Đăng ký dịch vụ</a
+                >
+              </li>
+              <li class="my-2">
+                <a href="#" class="link-offset-2 link-underline-opacity-0"
+                  >Email cho chúng tôi</a
+                >
+              </li>
+              <li class="my-2">
+                <a href="#" class="link-offset-2 link-underline-opacity-0"
+                  >Diễn đàn</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-xxl-auto col-12 mx-5 mt-5 text-xxl-start text-center">
+            <h2>Tìm hiểu thêm</h2>
+            <ul class="mt-5">
+              <li class="my-2">
+                <a href="#" class="link-offset-2 link-underline-opacity-0"
+                  >Tripster.com</a
+                >
+              </li>
+              <li class="my-2">
+                <a href="#" class="link-offset-2 link-underline-opacity-0"
+                  >Dịch vụ tư vấn</a
+                >
+              </li>
+              <li class="my-2">
+                <a href="#" class="link-offset-2 link-underline-opacity-0"
+                  >Điều khoản dịch vụ</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="row text-center social-media">
+          <div class="col-12 text-center">
+            <a href="#"
+              ><i class="fa-brands fa-facebook fa-2x mx-2 py-3"></i
+            ></a>
+            <a href="#"><i class="fa-brands fa-twitter fa-2x mx-2 py-3"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube fa-2x mx-2 py-3"></i></a>
+            <a href="#"
+              ><i class="fa-brands fa-instagram fa-2x mx-2 py-3"></i
+            ></a>
+            <a href="#"><i class="fa-brands fa-google fa-2x mx-2 py-3"></i></a>
+          </div>
+        </div>
+        <div class="row text-center">
+          <p class="copyright">Bản quyền thuộc về Tripster.com &copy; 2023</p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

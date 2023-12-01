@@ -1,0 +1,19 @@
+.info-link {
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.info-link:hover {
+  text-decoration: underline;
+  opacity: 1;
+}
+
+.navbar {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  z-index: 1000;
+  font-family: "Poppins Regular", sans-serif;
+}
