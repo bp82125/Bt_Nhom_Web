@@ -1,6 +1,7 @@
 .info-link {
   text-decoration: none;
   opacity: 0.8;
+  transition: ease-in-out 0.25s;
 }
 
 .info-link:hover {
@@ -16,4 +17,13 @@
   padding: 10px;
   z-index: 1000;
   font-family: "Poppins Regular", sans-serif;
+}
+
+.save-btn {
+  transition: ease-in-out 0.25s;
+}
+
+.save-btn:hover {
+  transform: scale(0.95);
+  opacity: 0.8;
 }
