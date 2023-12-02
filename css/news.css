@@ -23,7 +23,6 @@
 
 .link-list > .text-black:hover {
   color: #0d6efd !important;
-  font-size: 1em;
 }
 
 .dropdown-menu form {
@@ -36,15 +35,9 @@
 }
 
 .img-list {
-  height: 150px;
   width: 100%;
 }
 
 .card-title:hover {
   color: #0d6efd !important;
-  font-size: 1.1em;
-}
-
-.item-new > .text-black:hover {
-  font-size: 1.1em;
 }
