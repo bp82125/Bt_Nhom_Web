@@ -75,6 +75,7 @@ main {
 
 .signup .signup-btn:hover {
   transform: scale(0.95);
+  opacity: 0.8;
 }
 
 .signup .login-link {
